@@ -13,9 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func applicationDidFinishLaunching(_ application: UIApplication) {
-    let appearance = UINavigationBarAppearance()
-    UINavigationBar.appearance().scrollEdgeAppearance = appearance
-    UINavigationBar.appearance().standardAppearance = appearance
+    let controller = Router.rootViewController()
+    let navigationController = UINavigationController(rootViewController: controller)
+    navigationController.setNavigationBarHidden(true, animated: false)
+
+    window?.backgroundColor = .white
+    window?.rootViewController = navigationController
   }
 }
 

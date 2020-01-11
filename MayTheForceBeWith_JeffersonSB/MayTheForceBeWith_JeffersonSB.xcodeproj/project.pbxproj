@@ -15,7 +15,12 @@
 		4DD4455B23C926EE00F44849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455923C926EE00F44849 /* LaunchScreen.storyboard */; };
 		4DD4456623C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4456523C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests.swift */; };
 		4DD4457123C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4457023C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.swift */; };
-		4DD4458123C9B74000F44849 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4458023C9B74000F44849 /* PeopleViewController.swift */; };
+		4DD4458123C9B74000F44849 /* PeopleWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4458023C9B74000F44849 /* PeopleWidgetViewController.swift */; };
+		4DD4458723C9C6C000F44849 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4458623C9C6C000F44849 /* Router.swift */; };
+		4DD4458923C9C9B200F44849 /* PeopleWidgetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4458823C9C9B200F44849 /* PeopleWidgetInteractor.swift */; };
+		4DD4458B23C9C9CB00F44849 /* PeopleWidgetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4458A23C9C9CB00F44849 /* PeopleWidgetPresenter.swift */; };
+		4DD4458D23C9C9EF00F44849 /* PeopleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4458C23C9C9EF00F44849 /* PeopleProvider.swift */; };
+		4DD4458F23C9CF8700F44849 /* PeopleWidgetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4458E23C9CF8700F44849 /* PeopleWidgetBuilder.swift */; };
 		B098B4B7D0EAA6B535A62497 /* Pods_MayTheForceBeWith_JeffersonSBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657C5B8CD43818EF3AD9C41B /* Pods_MayTheForceBeWith_JeffersonSBTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +59,12 @@
 		4DD4456C23C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayTheForceBeWith_JeffersonSBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD4457023C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayTheForceBeWith_JeffersonSBUITests.swift; sourceTree = "<group>"; };
 		4DD4457223C926EE00F44849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DD4458023C9B74000F44849 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		4DD4458023C9B74000F44849 /* PeopleWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleWidgetViewController.swift; sourceTree = "<group>"; };
+		4DD4458623C9C6C000F44849 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4DD4458823C9C9B200F44849 /* PeopleWidgetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleWidgetInteractor.swift; sourceTree = "<group>"; };
+		4DD4458A23C9C9CB00F44849 /* PeopleWidgetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleWidgetPresenter.swift; sourceTree = "<group>"; };
+		4DD4458C23C9C9EF00F44849 /* PeopleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleProvider.swift; sourceTree = "<group>"; };
+		4DD4458E23C9CF8700F44849 /* PeopleWidgetBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleWidgetBuilder.swift; sourceTree = "<group>"; };
 		657C5B8CD43818EF3AD9C41B /* Pods_MayTheForceBeWith_JeffersonSBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceBeWith_JeffersonSBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D2E88DF43C5EA4E5CB54F2F /* Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB90A91365788AD2E06E0B /* Pods-MayTheForceBeWith_JeffersonSBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSBTests.debug.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSBTests/Pods-MayTheForceBeWith_JeffersonSBTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +161,11 @@
 		4DD4457F23C9B6B600F44849 /* People */ = {
 			isa = PBXGroup;
 			children = (
-				4DD4458023C9B74000F44849 /* PeopleViewController.swift */,
+				4DD4458E23C9CF8700F44849 /* PeopleWidgetBuilder.swift */,
+				4DD4458023C9B74000F44849 /* PeopleWidgetViewController.swift */,
+				4DD4458823C9C9B200F44849 /* PeopleWidgetInteractor.swift */,
+				4DD4458A23C9C9CB00F44849 /* PeopleWidgetPresenter.swift */,
+				4DD4458C23C9C9EF00F44849 /* PeopleProvider.swift */,
 			);
 			path = People;
 			sourceTree = "<group>";
@@ -163,6 +177,7 @@
 				4DD4455723C926EE00F44849 /* Assets.xcassets */,
 				4DD4455423C926EC00F44849 /* Main.storyboard */,
 				4DD4454E23C926EC00F44849 /* AppDelegate.swift */,
+				4DD4458623C9C6C000F44849 /* Router.swift */,
 			);
 			path = StartUp;
 			sourceTree = "<group>";
@@ -436,8 +451,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD4458D23C9C9EF00F44849 /* PeopleProvider.swift in Sources */,
+				4DD4458723C9C6C000F44849 /* Router.swift in Sources */,
 				4DD4454F23C926EC00F44849 /* AppDelegate.swift in Sources */,
-				4DD4458123C9B74000F44849 /* PeopleViewController.swift in Sources */,
+				4DD4458123C9B74000F44849 /* PeopleWidgetViewController.swift in Sources */,
+				4DD4458F23C9CF8700F44849 /* PeopleWidgetBuilder.swift in Sources */,
+				4DD4458923C9C9B200F44849 /* PeopleWidgetInteractor.swift in Sources */,
+				4DD4458B23C9C9CB00F44849 /* PeopleWidgetPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

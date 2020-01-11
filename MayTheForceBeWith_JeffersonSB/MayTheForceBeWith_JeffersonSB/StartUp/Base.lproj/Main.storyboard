@@ -3,26 +3,9 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--People View Controller-->
-        <scene sceneID="GBS-AG-QeK">
-            <objects>
-                <viewController id="e1o-1Q-LuP" customClass="PeopleViewController" customModule="MayTheForceBeWith_JeffersonSB" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UGr-UE-ht8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="lM9-cv-yjc"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="qwo-Ad-A1R"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DOY-dt-CSL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1663.7681159420292" y="10.714285714285714"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="MZR-xZ-q45">
             <objects>
@@ -33,9 +16,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="e1o-1Q-LuP" kind="relationship" relationship="rootViewController" id="wm8-fw-CSd"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3PY-cn-aby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
