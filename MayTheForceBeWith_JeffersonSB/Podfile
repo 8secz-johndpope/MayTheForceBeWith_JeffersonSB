@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'MayTheForceBeWith_JeffersonSB' do
   use_frameworks!
+  pod 'Moya', '~> 13.0'
   pod 'SnapKit', '~> 4.0'
 
   target 'MayTheForceBeWith_JeffersonSBTests' do

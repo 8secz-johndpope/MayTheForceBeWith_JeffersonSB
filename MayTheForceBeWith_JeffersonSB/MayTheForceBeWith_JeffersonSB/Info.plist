@@ -2,6 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ConfigBuild</key>
+	<dict>
+		<key>BUNDLE_ID_SUFFIX</key>
+		<string>$(BUNDLE_ID_SUFFIX)</string>
+		<key>BUNDLE_ID</key>
+		<string>$(BUNDLE_ID)</string>
+		<key>APP_VERSION</key>
+		<string>$(APP_VERSION)</string>
+		<key>APP_NAME_PREFIX</key>
+		<string>$(APP_NAME_PREFIX)</string>
+		<key>APP_NAME</key>
+		<string>$(APP_NAME)</string>
+		<key>APP_BUNDLE_VERSION</key>
+		<string>$(APP_BUNDLE_VERSION)</string>
+		<key>URL_BASE</key>
+		<string>$(URL_BASE)</string>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

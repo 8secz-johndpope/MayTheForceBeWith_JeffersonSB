@@ -26,7 +26,13 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
     }
     
     func fechPeople() {
-        let msg = provider.fechPeople()
-        presenter.presentPeoples(param: msg)
+        provider.fechPeople(success: { [weak self] response in
+            response.results.forEach {
+                self?.presenter.presentPeoples(param: $0.name)
+            }
+        }, failure: { error in
+            print("ERROR")
+            self.presenter.presentPeoples(param: "error \(error.description)")
+        })
     }
 }
