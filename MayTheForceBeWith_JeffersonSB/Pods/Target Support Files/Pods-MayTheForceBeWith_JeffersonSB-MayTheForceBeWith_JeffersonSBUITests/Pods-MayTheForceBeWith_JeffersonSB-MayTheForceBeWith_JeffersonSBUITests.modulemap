@@ -1,0 +1,6 @@
+framework module Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests {
+  umbrella header "Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
