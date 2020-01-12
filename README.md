@@ -7,6 +7,7 @@
   * [x] The people’s list layout
   * [x] Paginated 10 people at a time and loading 10 more after bouncing at the bottom.
   * [x] AppIcons OK
+  * [ ] Loading 10 more activity indicator
   * [ ] Show a detail screen for the selected Person
   * [ ] Mark people as favorite
   * [ ] UnitTests + UITest: Coverage 0%
