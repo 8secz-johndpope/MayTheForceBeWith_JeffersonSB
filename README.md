@@ -10,8 +10,8 @@
   * [ ] Loading 10 more activity indicator
   * [ ] Show a detail screen for the selected Person
   * [ ] Mark people as favorite
-  * [ ] UnitTests + UITest: Coverage ![progress](https://progress-bar.dev/0/) 
-  * [ ] Accessibility: ![progress](https://progress-bar.dev/0/) 
+  * [ ] UnitTests + UITest: Coverage 0%
+  * [ ] Accessibility: 0%
   
 ## Requirements
 - Xcode 11.0+
