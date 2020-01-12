@@ -6,6 +6,7 @@
   * [x] On people’s list, search for a persons' name is ok.
   * [x] The people’s list layout
   * [x] Paginated 10 people at a time and loading 10 more after bouncing at the bottom.
+  * [x] AppIcons OK
   * [ ] Show a detail screen for the selected Person
   * [ ] Mark people as favorite
   * [ ] UnitTests + UITest: Coverage 0%
