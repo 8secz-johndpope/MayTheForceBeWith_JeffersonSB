@@ -7,7 +7,7 @@
   * [x] The people’s list layout
   * [x] Paginated 10 people at a time and loading 10 more after bouncing at the bottom.
   * [ ] Show a detail screen for the selected Person
-  * [ ] Could be able to mark any of the people as favorite
+  * [ ] Mark people as favorite
   * [ ] UnitTests + UITest: Coverage 0%
   * [ ] Accessibility: 0%
   
