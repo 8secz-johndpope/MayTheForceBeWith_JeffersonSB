@@ -10,15 +10,21 @@ import Foundation
 
 protocol PeopleWidgetPresentationLogic {
     func presentPeoples(response: [PeopleResult])
+    func presentError(with error: String)
 }
 
 /// Responsible for displaying the module information PeopleWidget
 final class PeopleWidgetPresenter: PeopleWidgetPresentationLogic {
+
     weak var viewController: PeopleWidgetDisplayLogic?
     
     func presentPeoples(response: [PeopleResult]) {
         let items = transform(peoples: response)
         viewController?.displayPeople(presentResult: items)
+    }
+    
+    func presentError(with error: String) {
+        viewController?.displayError(with: error)
     }
     
     func transform(peoples: [PeopleResult]) -> [PeopleListCell.ViewModel] {
@@ -29,4 +35,6 @@ final class PeopleWidgetPresenter: PeopleWidgetPresentationLogic {
             )
         }
     }
+    
+    
 }

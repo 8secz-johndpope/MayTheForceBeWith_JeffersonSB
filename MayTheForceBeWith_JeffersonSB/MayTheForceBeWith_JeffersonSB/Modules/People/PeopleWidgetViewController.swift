@@ -11,6 +11,7 @@ import IGListKit
 
 protocol PeopleWidgetDisplayLogic: AnyObject {
     func displayPeople(presentResult: [PeopleListCell.ViewModel])
+    func displayError(with error: String)
 }
 
 final class PeopleWidgetViewController: UIViewController {
@@ -68,9 +69,19 @@ final class PeopleWidgetViewController: UIViewController {
             navigationItem.titleView = searchController.searchBar
         }
     }
+    
+    private func showAlert(with error: String) {
+        let alert = UIAlertController(title: "Alert", message: error, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
 extension PeopleWidgetViewController: PeopleWidgetDisplayLogic {
+    func displayError(with error: String) {
+        showAlert(with: error)
+    }
+    
     func displayPeople(presentResult: [PeopleListCell.ViewModel]) {
         viewModel = presentResult
         adapter.performUpdates(animated: true, completion: nil)
