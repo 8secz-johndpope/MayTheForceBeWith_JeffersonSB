@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		10F553E1E0E5E22480076E62 /* Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2E88DF43C5EA4E5CB54F2F /* Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework */; };
 		3A2A70A8C62898A266F828D6 /* Pods_MayTheForceBeWith_JeffersonSB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84396F4A092E96B44DCA8B4 /* Pods_MayTheForceBeWith_JeffersonSB.framework */; };
+		4D04A07C23CB18AE00D0EACD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A07B23CB18AE00D0EACD /* UIColor+Extension.swift */; };
+		4D04A07E23CB32ED00D0EACD /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A07D23CB32ED00D0EACD /* UINavigationBar+Extension.swift */; };
 		4DD4454F23C926EC00F44849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4454E23C926EC00F44849 /* AppDelegate.swift */; };
 		4DD4455623C926EC00F44849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455423C926EC00F44849 /* Main.storyboard */; };
 		4DD4455823C926EE00F44849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455723C926EE00F44849 /* Assets.xcassets */; };
@@ -23,11 +25,16 @@
 		4DD4458F23C9CF8700F44849 /* PeopleWidgetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4458E23C9CF8700F44849 /* PeopleWidgetBuilder.swift */; };
 		4DD4459223CA28C700F44849 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4459123CA28C700F44849 /* PeopleModel.swift */; };
 		4DD4459623CA31A800F44849 /* PeopleAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4459523CA31A800F44849 /* PeopleAPIs.swift */; };
-		4DD4459B23CA394100F44849 /* ConfigBuild-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4459823CA394100F44849 /* ConfigBuild-Release.xcconfig */; };
-		4DD4459C23CA394100F44849 /* ConfigBuild-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4459923CA394100F44849 /* ConfigBuild-Debug.xcconfig */; };
-		4DD4459D23CA394100F44849 /* ConfigBuild-Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4459A23CA394100F44849 /* ConfigBuild-Staging.xcconfig */; };
 		4DD445A023CA3A4A00F44849 /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4459F23CA3A4A00F44849 /* AppEntity.swift */; };
 		4DD445A623CA45C400F44849 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445A523CA45C400F44849 /* AppService.swift */; };
+		4DD445A823CAE9D300F44849 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445A723CAE9D300F44849 /* PeopleListView.swift */; };
+		4DD445AB23CAF1B700F44849 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445AA23CAF1B700F44849 /* PeopleListViewModel.swift */; };
+		4DD445AD23CAFC2D00F44849 /* PeopleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445AC23CAFC2C00F44849 /* PeopleListCell.swift */; };
+		4DD445B123CAFF1500F44849 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445B023CAFF1500F44849 /* Configurable.swift */; };
+		4DD445B323CB04EA00F44849 /* Diffable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445B223CB04EA00F44849 /* Diffable+Extension.swift */; };
+		4DD445B523CB05CC00F44849 /* PeopleSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445B423CB05CC00F44849 /* PeopleSectionController.swift */; };
+		4DD445B823CB07CF00F44849 /* TitleSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445B723CB07CF00F44849 /* TitleSectionHeaderView.swift */; };
+		4DD445BB23CB083700F44849 /* LocalSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445BA23CB083700F44849 /* LocalSizes.swift */; };
 		B098B4B7D0EAA6B535A62497 /* Pods_MayTheForceBeWith_JeffersonSBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657C5B8CD43818EF3AD9C41B /* Pods_MayTheForceBeWith_JeffersonSBTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +63,8 @@
 		3D93DE82C351E6C419AD442B /* Pods-MayTheForceBeWith_JeffersonSBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSBTests.release.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSBTests/Pods-MayTheForceBeWith_JeffersonSBTests.release.xcconfig"; sourceTree = "<group>"; };
 		3FB9F8BB7FE5F30ACC7261BE /* Pods-MayTheForceBeWith_JeffersonSB.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSB.staging.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSB/Pods-MayTheForceBeWith_JeffersonSB.staging.xcconfig"; sourceTree = "<group>"; };
 		43CECAAF93220644861B5815 /* Pods-MayTheForceBeWith_JeffersonSB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSB.debug.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSB/Pods-MayTheForceBeWith_JeffersonSB.debug.xcconfig"; sourceTree = "<group>"; };
+		4D04A07B23CB18AE00D0EACD /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		4D04A07D23CB32ED00D0EACD /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
 		4DD4454B23C926EC00F44849 /* [D]MayTheForceBeWith-JeffSB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[D]MayTheForceBeWith-JeffSB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD4454E23C926EC00F44849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DD4455523C926EC00F44849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +90,14 @@
 		4DD4459A23CA394100F44849 /* ConfigBuild-Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "ConfigBuild-Staging.xcconfig"; sourceTree = "<group>"; };
 		4DD4459F23CA3A4A00F44849 /* AppEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntity.swift; sourceTree = "<group>"; };
 		4DD445A523CA45C400F44849 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		4DD445A723CAE9D300F44849 /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
+		4DD445AA23CAF1B700F44849 /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
+		4DD445AC23CAFC2C00F44849 /* PeopleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListCell.swift; sourceTree = "<group>"; };
+		4DD445B023CAFF1500F44849 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		4DD445B223CB04EA00F44849 /* Diffable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diffable+Extension.swift"; sourceTree = "<group>"; };
+		4DD445B423CB05CC00F44849 /* PeopleSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeopleSectionController.swift; path = MayTheForceBeWith_JeffersonSB/Modules/People/PeopleSectionController.swift; sourceTree = SOURCE_ROOT; };
+		4DD445B723CB07CF00F44849 /* TitleSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSectionHeaderView.swift; sourceTree = "<group>"; };
+		4DD445BA23CB083700F44849 /* LocalSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSizes.swift; sourceTree = "<group>"; };
 		657C5B8CD43818EF3AD9C41B /* Pods_MayTheForceBeWith_JeffersonSBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceBeWith_JeffersonSBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87290EDEA585EFA6DFFB2736 /* Pods-MayTheForceBeWith_JeffersonSBTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSBTests.staging.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSBTests/Pods-MayTheForceBeWith_JeffersonSBTests.staging.xcconfig"; sourceTree = "<group>"; };
 		8D2E88DF43C5EA4E5CB54F2F /* Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +158,7 @@
 		4DD4454D23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB */ = {
 			isa = PBXGroup;
 			children = (
+				4DD445AE23CAFED500F44849 /* UIComponents */,
 				4DD4455C23C926EE00F44849 /* Info.plist */,
 				4DD4458223C9BD0500F44849 /* StartUp */,
 				4DD4459E23CA3A2B00F44849 /* Entities */,
@@ -180,12 +198,14 @@
 			isa = PBXGroup;
 			children = (
 				4DD4459323CA28D500F44849 /* View */,
+				4DD445A923CAF16600F44849 /* ViewModel */,
 				4DD4459423CA314C00F44849 /* Provider */,
 				4DD4459023CA287C00F44849 /* Model */,
 				4DD4458E23C9CF8700F44849 /* PeopleWidgetBuilder.swift */,
 				4DD4458023C9B74000F44849 /* PeopleWidgetViewController.swift */,
 				4DD4458823C9C9B200F44849 /* PeopleWidgetInteractor.swift */,
 				4DD4458A23C9C9CB00F44849 /* PeopleWidgetPresenter.swift */,
+				4DD445B423CB05CC00F44849 /* PeopleSectionController.swift */,
 			);
 			path = People;
 			sourceTree = "<group>";
@@ -213,6 +233,8 @@
 		4DD4459323CA28D500F44849 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4DD445A723CAE9D300F44849 /* PeopleListView.swift */,
+				4DD445AC23CAFC2C00F44849 /* PeopleListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +265,51 @@
 				4DD445A523CA45C400F44849 /* AppService.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		4DD445A923CAF16600F44849 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DD445AA23CAF1B700F44849 /* PeopleListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4DD445AE23CAFED500F44849 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4DD445B923CB082200F44849 /* Grid */,
+				4DD445B623CB07B300F44849 /* Molecules */,
+				4DD445AF23CAFEEA00F44849 /* Extensions */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		4DD445AF23CAFEEA00F44849 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4DD445B023CAFF1500F44849 /* Configurable.swift */,
+				4DD445B223CB04EA00F44849 /* Diffable+Extension.swift */,
+				4D04A07B23CB18AE00D0EACD /* UIColor+Extension.swift */,
+				4D04A07D23CB32ED00D0EACD /* UINavigationBar+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4DD445B623CB07B300F44849 /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+				4DD445B723CB07CF00F44849 /* TitleSectionHeaderView.swift */,
+			);
+			path = Molecules;
+			sourceTree = "<group>";
+		};
+		4DD445B923CB082200F44849 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				4DD445BA23CB083700F44849 /* LocalSizes.swift */,
+			);
+			path = Grid;
 			sourceTree = "<group>";
 		};
 		89B6D78AA66A6E6717D06A1F /* Pods */ = {
@@ -382,10 +449,7 @@
 			files = (
 				4DD4455B23C926EE00F44849 /* LaunchScreen.storyboard in Resources */,
 				4DD4455823C926EE00F44849 /* Assets.xcassets in Resources */,
-				4DD4459C23CA394100F44849 /* ConfigBuild-Debug.xcconfig in Resources */,
-				4DD4459D23CA394100F44849 /* ConfigBuild-Staging.xcconfig in Resources */,
 				4DD4455623C926EC00F44849 /* Main.storyboard in Resources */,
-				4DD4459B23CA394100F44849 /* ConfigBuild-Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,17 +577,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD445BB23CB083700F44849 /* LocalSizes.swift in Sources */,
+				4DD445B123CAFF1500F44849 /* Configurable.swift in Sources */,
 				4DD4458D23C9C9EF00F44849 /* PeopleProvider.swift in Sources */,
+				4DD445B823CB07CF00F44849 /* TitleSectionHeaderView.swift in Sources */,
 				4DD4458723C9C6C000F44849 /* Router.swift in Sources */,
+				4D04A07E23CB32ED00D0EACD /* UINavigationBar+Extension.swift in Sources */,
+				4DD445AB23CAF1B700F44849 /* PeopleListViewModel.swift in Sources */,
 				4DD4459223CA28C700F44849 /* PeopleModel.swift in Sources */,
 				4DD4459623CA31A800F44849 /* PeopleAPIs.swift in Sources */,
 				4DD4454F23C926EC00F44849 /* AppDelegate.swift in Sources */,
 				4DD445A023CA3A4A00F44849 /* AppEntity.swift in Sources */,
 				4DD4458123C9B74000F44849 /* PeopleWidgetViewController.swift in Sources */,
+				4DD445AD23CAFC2D00F44849 /* PeopleListCell.swift in Sources */,
+				4DD445A823CAE9D300F44849 /* PeopleListView.swift in Sources */,
 				4DD445A623CA45C400F44849 /* AppService.swift in Sources */,
+				4DD445B523CB05CC00F44849 /* PeopleSectionController.swift in Sources */,
+				4DD445B323CB04EA00F44849 /* Diffable+Extension.swift in Sources */,
 				4DD4458F23C9CF8700F44849 /* PeopleWidgetBuilder.swift in Sources */,
 				4DD4458923C9C9B200F44849 /* PeopleWidgetInteractor.swift in Sources */,
 				4DD4458B23C9C9CB00F44849 /* PeopleWidgetPresenter.swift in Sources */,
+				4D04A07C23CB18AE00D0EACD /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,7 +776,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97MFDGRZVH;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -722,7 +796,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97MFDGRZVH;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -892,7 +966,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97MFDGRZVH;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

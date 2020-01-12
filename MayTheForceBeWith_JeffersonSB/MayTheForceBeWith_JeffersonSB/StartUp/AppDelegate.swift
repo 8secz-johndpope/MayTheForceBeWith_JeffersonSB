@@ -15,9 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationDidFinishLaunching(_ application: UIApplication) {
     let controller = Router.rootViewController()
     let navigationController = UINavigationController(rootViewController: controller)
-    navigationController.setNavigationBarHidden(true, animated: false)
+    navigationController.setNavigationBarHidden(false, animated: false)
+    navigationController.navigationBar.isTranslucent = true
+    navigationController.navigationBar.tintColor = .gray
+    navigationController.navigationBar.barTintColor = .blackShark
+    navigationController.navigationBar.backgroundColor = .blackShark
+    
+    if #available(iOS 11.0, *) {
+        UINavigationBar.appearance().largeTitleTextAttributes =
+            [NSAttributedString.Key.foregroundColor:UIColor.white,
+             NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 22)]
+    }
 
-    window?.backgroundColor = .white
     window?.rootViewController = navigationController
   }
 }

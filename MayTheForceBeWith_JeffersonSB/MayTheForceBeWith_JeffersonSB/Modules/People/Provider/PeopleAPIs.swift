@@ -10,6 +10,7 @@ import Moya
 
 enum PeopleAPIs: TargetType {
     case all
+    case loadMore(page: Int)
 
     var baseURL: URL {
         return AppService.shared.app.baseURL
@@ -19,12 +20,14 @@ enum PeopleAPIs: TargetType {
         switch self {
         case .all:
             return "people/"
+        case .loadMore:
+            return "people/"
         }
     }
 
     var method: Moya.Method {
         switch self {
-        case .all:
+        case .all, .loadMore:
             return .get
         }
     }
@@ -34,7 +37,13 @@ enum PeopleAPIs: TargetType {
     }
 
     var task: Task {
-        return .requestPlain
+        switch self {
+        case let .loadMore(page):
+            let queryParams = ["page": page]
+            return .requestParameters(parameters: queryParams, encoding: URLEncoding.queryString)
+        default:
+            return .requestPlain
+        }
     }
 
     var headers: [String: String]? {

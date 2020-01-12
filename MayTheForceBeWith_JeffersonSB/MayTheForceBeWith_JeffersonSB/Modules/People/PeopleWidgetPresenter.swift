@@ -9,14 +9,24 @@
 import Foundation
 
 protocol PeopleWidgetPresentationLogic {
-    func presentPeoples(param: String)
+    func presentPeoples(response: [PeopleResult])
 }
 
 /// Responsible for displaying the module information PeopleWidget
 final class PeopleWidgetPresenter: PeopleWidgetPresentationLogic {
     weak var viewController: PeopleWidgetDisplayLogic?
     
-    func presentPeoples(param: String) {
-        viewController?.displayPeople(param: param)
+    func presentPeoples(response: [PeopleResult]) {
+        let items = transform(peoples: response)
+        viewController?.displayPeople(presentResult: items)
+    }
+    
+    func transform(peoples: [PeopleResult]) -> [PeopleListCell.ViewModel] {
+        return peoples.compactMap { people in
+            PeopleListCell.ViewModel(
+                url: people.url,
+                name: people.name
+            )
+        }
     }
 }

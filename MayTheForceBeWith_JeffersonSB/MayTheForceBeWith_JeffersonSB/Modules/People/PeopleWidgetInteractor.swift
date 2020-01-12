@@ -10,11 +10,18 @@ import Foundation
 
 protocol PeopleWidgetBusinessLogic {
     func fechPeople()
+    func loadMore()
+    func searchPeople(name: String)
 }
 
 final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
     let presenter: PeopleWidgetPresentationLogic
     let provider: ProviderPeople
+    var searchText: String?
+    private var currentPage = 1
+    private var canLoadMore = false
+    private var hasMoreToLoad = false
+    private var cachedPeople: [PeopleResult] = []
 
     init(
         presenter: PeopleWidgetPresentationLogic,
@@ -27,12 +34,55 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
     
     func fechPeople() {
         provider.fechPeople(success: { [weak self] response in
-            response.results.forEach {
-                self?.presenter.presentPeoples(param: $0.name)
-            }
+            self?.cachedPeople = response.results
+            self?.canLoadMore = !response.next.isEmpty
+            self?.presenter.presentPeoples(response: response.results)
         }, failure: { error in
             print("ERROR")
-            self.presenter.presentPeoples(param: "error \(error.description)")
         })
+    }
+    
+    func loadMore() {
+        guard canLoadMore else {
+            return
+        }
+        canLoadMore = false
+        currentPage += 1
+        provider.loadMore(page: currentPage, success: { [weak self] response in
+            self?.canLoadMore = !response.next.isEmpty
+            print(response.next)
+            self?.cachedPeople += response.results
+            guard let peoples = self?.cachedPeople else { return }
+            self?.presenter.presentPeoples(response: peoples)
+        }, failure: { error in
+            print(error.debugDescription)
+        })
+    }
+    
+    func searchPeople(name: String) {
+        guard !cachedPeople.isEmpty else {
+            return
+        }
+        let peoples = cachedPeople
+        let text = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard text.isEmpty == false else {
+            searchText = nil
+            self.presenter.presentPeoples(response: peoples)
+            return
+        }
+        searchText = text
+        let result = searchInPeople(peoples, with: text)
+        self.presenter.presentPeoples(response: result)
+    }
+    
+    private func searchInPeople(_ peoples: [PeopleResult], with text: String) -> [PeopleResult] {
+        let text = text.lowercased()
+        let predicate = NSPredicate(format: "SELF BEGINSWITH[cd] %@", text)
+        let filtered = peoples.filter {
+            let name = $0.name.lowercased()
+            let nameParts = name.lowercased().components(separatedBy: .whitespaces)
+            return nameParts.contains { predicate.evaluate(with: $0) } || name.hasPrefix(text)
+        }
+        return filtered
     }
 }

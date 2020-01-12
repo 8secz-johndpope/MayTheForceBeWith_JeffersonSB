@@ -12,7 +12,7 @@ final class Router: NSObject {
     static func rootViewController() -> UIViewController {
         let viewController: UIViewController = PeopleWidgetBuilder()
             .build()
-
+        viewController.title = "MayTheForceBeWith Jeff"
         return viewController
     }
     

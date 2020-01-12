@@ -2,10 +2,14 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.3'
 use_frameworks!
 
-target 'MayTheForceBeWith_JeffersonSB' do
-  use_frameworks!
-  pod 'Moya', '~> 13.0'
+def helpful
   pod 'SnapKit', '~> 4.0'
+  pod 'IGListKit', '~> 4.0.0'
+  pod 'Moya', '~> 13.0.0', :inhibit_warnings => true
+end
+
+target 'MayTheForceBeWith_JeffersonSB' do
+  helpful
 
   target 'MayTheForceBeWith_JeffersonSBTests' do
     inherit! :search_paths
