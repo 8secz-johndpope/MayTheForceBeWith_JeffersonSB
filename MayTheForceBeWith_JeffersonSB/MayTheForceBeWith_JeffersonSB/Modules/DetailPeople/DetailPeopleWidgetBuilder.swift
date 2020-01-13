@@ -9,7 +9,11 @@
 import UIKit
 
 public final class DetailPeopleWidgetBuilder {
-    public init() {}
+    let peopleDetail: PeopleResult
+    
+    public init(peopleDetail: PeopleResult) {
+        self.peopleDetail = peopleDetail
+    }
     
     public func build() -> UIViewController {
         let presenter = DetailPeopleWidgetPresenter()
@@ -18,7 +22,7 @@ public final class DetailPeopleWidgetBuilder {
             presenter: presenter,
             provider: provider
         )
-        let controller = DetailPeopleWidgetViewController(interactor: interactor)
+        let controller = DetailPeopleWidgetViewController(peopleDetail: peopleDetail, interactor: interactor)
 
         presenter.viewController = controller
         return controller

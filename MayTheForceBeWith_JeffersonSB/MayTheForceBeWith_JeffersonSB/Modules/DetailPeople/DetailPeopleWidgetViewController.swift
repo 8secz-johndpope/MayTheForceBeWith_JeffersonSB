@@ -10,11 +10,13 @@ import UIKit
 import IGListKit
 
 protocol DetailPeopleWidgetDisplayLogic: AnyObject {
+    func displayPeopleDetail(model: [DetailPeopleListCell.ViewModel])
     func displayError(with error: String)
 }
 
 final class DetailPeopleWidgetViewController: UIViewController {
     let interactor: DetailPeopleWidgetBusinessLogic
+    let peopleDetail: PeopleResult
     private var viewModel: [DetailPeopleListCell.ViewModel]?
     
     lazy var contentView = DetailPeopleListView(frame: UIScreen.main.bounds)
@@ -24,8 +26,10 @@ final class DetailPeopleWidgetViewController: UIViewController {
     }()
     
     init(
+        peopleDetail: PeopleResult,
         interactor: DetailPeopleWidgetBusinessLogic
     ) {
+        self.peopleDetail = peopleDetail
         self.interactor = interactor
         super.init(nibName: nil, bundle: nil)
     }
@@ -46,7 +50,7 @@ final class DetailPeopleWidgetViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        interactor.fechPeople()
+        interactor.fechPeopleDetail(detail: peopleDetail)
     }
     
     private func showAlert(with error: String) {
@@ -57,6 +61,11 @@ final class DetailPeopleWidgetViewController: UIViewController {
 }
 
 extension DetailPeopleWidgetViewController: DetailPeopleWidgetDisplayLogic {
+    func displayPeopleDetail(model: [DetailPeopleListCell.ViewModel]) {
+        viewModel = model
+        adapter.performUpdates(animated: true, completion: nil)
+    }
+    
     func displayError(with error: String) {
         showAlert(with: error)
     }

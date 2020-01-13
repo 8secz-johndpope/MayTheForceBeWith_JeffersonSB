@@ -13,15 +13,25 @@ extension DetailPeopleListCell {
     struct Appearance {
         let buttonSize = CGSize(width: 84, height: 24)
         let xxsSpace = 2
+        let xsSpace = 4
     }
 }
 
 class DetailPeopleListCell: UICollectionViewCell {
     fileprivate let appearance = Appearance()
     
-    lazy var nameLabel: UILabel = {
+    lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .gray
+        label.font = UIFont.systemFont(ofSize: 12.0)
+        label.textAlignment = .left
+        return label
+    }()
+    
+    lazy var subtitleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 17.0)
         label.textAlignment = .left
         return label
     }()
@@ -36,47 +46,53 @@ class DetailPeopleListCell: UICollectionViewCell {
     }
 
     private func commonInit() {
-        backgroundColor = .blackShark
         addSubviews()
         makeConstraints()
     }
 
     private func addSubviews() {
-        contentView.addSubview(nameLabel)
+        contentView.addSubview(titleLabel)
+        contentView.addSubview(subtitleLabel)
     }
 
     private func makeConstraints() {
-        nameLabel.snp.makeConstraints { make in
-            make.top.leading.bottom.equalToSuperview().inset(appearance.xxsSpace)
+        titleLabel.snp.makeConstraints { make in
+            make.top.leading.equalToSuperview().inset(appearance.xxsSpace)
+        }
+        
+        subtitleLabel.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(appearance.xsSpace)
+            make.leading.equalToSuperview().inset(appearance.xxsSpace)
         }
     }
 }
 
 extension DetailPeopleListCell: Configurable {
     final class ViewModel: ListDiffable {
-        let url: String
-        let name: String
+        let title: String
+        let subtitle: String
 
-        public static let empty = ViewModel(url: "", name: "")
+        public static let empty = ViewModel(title: "", subtitle: "")
 
-        init(url: String, name: String) {
-            self.url = url
-            self.name = name
+        init(title: String, subtitle: String) {
+            self.title = title
+            self.subtitle = subtitle
         }
 
         func diffIdentifier() -> NSObjectProtocol {
-            return url as NSObjectProtocol
+            return title as NSObjectProtocol
         }
 
         func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
             guard self !== object else { return true }
             guard let object = object as? DetailPeopleListCell.ViewModel else { return false }
-            return url == object.url
+            return title == object.title
         }
     }
 
     func configure(with viewModel: DetailPeopleListCell.ViewModel) {
-        nameLabel.text = viewModel.name
+        titleLabel.text = viewModel.title
+        subtitleLabel.text = viewModel.subtitle
     }
 }
 

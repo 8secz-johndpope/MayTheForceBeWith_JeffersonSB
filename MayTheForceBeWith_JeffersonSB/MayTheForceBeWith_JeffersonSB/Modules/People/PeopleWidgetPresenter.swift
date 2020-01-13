@@ -27,6 +27,10 @@ final class PeopleWidgetPresenter: PeopleWidgetPresentationLogic {
         viewController?.displayError(with: error)
     }
     
+    func presentDetail(controller: UIViewController) {
+        viewController?.displayDetail(viewController: controller)
+    }
+    
     func transform(peoples: [PeopleResult]) -> [PeopleListCell.ViewModel] {
         return peoples.compactMap { people in
             PeopleListCell.ViewModel(
@@ -34,9 +38,5 @@ final class PeopleWidgetPresenter: PeopleWidgetPresentationLogic {
                 name: people.name
             )
         }
-    }
-    
-    func presentDetail(controller: UIViewController) {
-        viewController?.displayDetail(viewController: controller)
     }
 }

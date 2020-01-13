@@ -18,7 +18,7 @@ class MayTheForceBeWith_JeffersonSBUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testListPeople() {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
@@ -29,6 +29,10 @@ class MayTheForceBeWith_JeffersonSBUITests: XCTestCase {
         let searchSearchField = maytheforcebewithJeffNavigationBar.searchFields["Search"]
         searchSearchField.tap()
         maytheforcebewithJeffNavigationBar.buttons["Cancel"].tap()
+        
+    }
+    
+    func testListPeopleDetail() {
         
     }
 

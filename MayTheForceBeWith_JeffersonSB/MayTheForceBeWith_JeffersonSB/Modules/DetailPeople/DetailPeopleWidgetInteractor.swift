@@ -9,7 +9,7 @@
 import Foundation
 
 protocol DetailPeopleWidgetBusinessLogic {
-    func fechPeople()
+    func fechPeopleDetail(detail: PeopleResult)
 }
 
 final class DetailPeopleWidgetInteractor: DetailPeopleWidgetBusinessLogic {
@@ -31,7 +31,7 @@ final class DetailPeopleWidgetInteractor: DetailPeopleWidgetBusinessLogic {
 
     }
     
-    func fechPeople() {
-        
+    func fechPeopleDetail(detail: PeopleResult) {
+        presenter.presentPeopleDetail(detail: detail)
     }
 }

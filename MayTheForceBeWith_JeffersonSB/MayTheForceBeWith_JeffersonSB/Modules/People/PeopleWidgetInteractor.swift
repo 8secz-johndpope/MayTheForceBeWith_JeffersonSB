@@ -12,7 +12,7 @@ protocol PeopleWidgetBusinessLogic {
     func fechPeople()
     func loadMore()
     func searchPeople(name: String)
-    func segueDetail()
+    func segueDetail(index: Int)
 }
 
 final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
@@ -85,8 +85,12 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
         return filtered
     }
     
-    func segueDetail() {
-        let controller = Router.detailViewController()
+    func segueDetail(index: Int) {
+        guard cachedPeople.indices.contains(index) else {
+            return
+        }
+        let peopleDetail = cachedPeople[index]
+        let controller = Router.detailViewController(peopleDetail: peopleDetail)
         presenter.presentDetail(controller: controller)
     }
 }
