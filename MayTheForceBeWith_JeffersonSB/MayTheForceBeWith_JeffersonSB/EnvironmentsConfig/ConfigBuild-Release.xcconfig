@@ -1,0 +1,20 @@
+//
+//  ConfigBuild-Release.xcconfig
+//  MayTheForceBeWith_JeffersonSB
+//
+//  Created by Jefferson Batista on 11/01/2020.
+//  Copyright © 2020 Jefferson S Batista. All rights reserved.
+//
+
+HTTP=http:/$()/
+HTTPS=https:/$()/
+
+BUNDLE_ID_SUFFIX=
+BUNDLE_ID=com.jeffsbcodes.MayTheForceBeWith-JeffersonSB$(BUNDLE_ID_SUFFIX)
+APP_NAME_PREFIX=
+APP_NAME=$(APP_NAME_PREFIX)MayTheForceBeWith-JeffSB
+APP_VERSION=1.0.0
+APP_BUNDLE_VERSION=1
+
+//Urls
+URL_BASE=$(HTTPS)swapi.co/api
