@@ -7,15 +7,18 @@
   * [x] The people’s list layout
   * [x] Paginated 10 people at a time and loading 10 more after bouncing at the bottom.
   * [x] AppIcons OK
-  * [ ] Loading 10 more activity indicator
-  * [ ] Show a detail screen for the selected Person
-  * [ ] Mark people as favorite
+  
+  ![progress](https://progress-bar.dev/0 "progress") Show a detail screen for the selected Person
+  
+  ![progress](https://progress-bar.dev/0 "progress") Mark people as favorite
   
   ![progress](https://progress-bar.dev/37 "progress") Coverage UnitTests
   
   ![progress](https://progress-bar.dev/58 "progress") Coverage UITest
   
   ![progress](https://progress-bar.dev/0 "progress") Accessibility
+  
+  ![progress](https://progress-bar.dev/0 "progress") Loading 10 more activity indicator
   
 ## Requirements
 - Xcode 11.0+
