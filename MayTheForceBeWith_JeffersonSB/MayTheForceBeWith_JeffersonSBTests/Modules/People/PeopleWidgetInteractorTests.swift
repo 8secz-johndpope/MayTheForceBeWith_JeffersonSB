@@ -42,6 +42,12 @@ class PeopleWidgetInteractorTests: XCTestCase {
         XCTAssertTrue(presenter.presentPeoples)
     }
     
+    func testInteractorSegueDetaill() {
+        provider.testErrors(with: false)
+        interactor.segueDetail()
+        XCTAssertTrue(presenter.presentDetail)
+    }
+    
     func testInteractorFechPeopleFailure() {
         provider.testErrors(with: true)
         interactor.fechPeople()

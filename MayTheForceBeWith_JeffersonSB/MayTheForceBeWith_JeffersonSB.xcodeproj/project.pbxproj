@@ -14,6 +14,13 @@
 		4D04A0C223CC400B00D0EACD /* PeoplePresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0C123CC400B00D0EACD /* PeoplePresenterMock.swift */; };
 		4D04A0C423CC45CA00D0EACD /* PeopleProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0C323CC45CA00D0EACD /* PeopleProviderMock.swift */; };
 		4D04A0CC23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0CB23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.swift */; };
+		4D04A0DF23CCA45500D0EACD /* DetailPeopleWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0DA23CCA45500D0EACD /* DetailPeopleWidgetViewController.swift */; };
+		4D04A0E023CCA45500D0EACD /* DetailPeopleSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0DB23CCA45500D0EACD /* DetailPeopleSectionController.swift */; };
+		4D04A0E123CCA45500D0EACD /* DetailPeopleWidgetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0DC23CCA45500D0EACD /* DetailPeopleWidgetPresenter.swift */; };
+		4D04A0E223CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0DD23CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift */; };
+		4D04A0E323CCA45500D0EACD /* DetailPeopleWidgetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0DE23CCA45500D0EACD /* DetailPeopleWidgetBuilder.swift */; };
+		4D04A0E623CCA73500D0EACD /* DetailPeopleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0E523CCA73500D0EACD /* DetailPeopleListCell.swift */; };
+		4D04A0E823CCA9F600D0EACD /* DetailPeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0E723CCA9F600D0EACD /* DetailPeopleListView.swift */; };
 		4DD4454F23C926EC00F44849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4454E23C926EC00F44849 /* AppDelegate.swift */; };
 		4DD4455623C926EC00F44849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455423C926EC00F44849 /* Main.storyboard */; };
 		4DD4455823C926EE00F44849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455723C926EE00F44849 /* Assets.xcassets */; };
@@ -76,6 +83,13 @@
 		4D04A0C923CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayTheForceBeWith_JeffersonSBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D04A0CB23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayTheForceBeWith_JeffersonSBUITests.swift; sourceTree = "<group>"; };
 		4D04A0CD23CC539100D0EACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D04A0DA23CCA45500D0EACD /* DetailPeopleWidgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPeopleWidgetViewController.swift; sourceTree = "<group>"; };
+		4D04A0DB23CCA45500D0EACD /* DetailPeopleSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPeopleSectionController.swift; sourceTree = "<group>"; };
+		4D04A0DC23CCA45500D0EACD /* DetailPeopleWidgetPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPeopleWidgetPresenter.swift; sourceTree = "<group>"; };
+		4D04A0DD23CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPeopleWidgetInteractor.swift; sourceTree = "<group>"; };
+		4D04A0DE23CCA45500D0EACD /* DetailPeopleWidgetBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPeopleWidgetBuilder.swift; sourceTree = "<group>"; };
+		4D04A0E523CCA73500D0EACD /* DetailPeopleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleListCell.swift; sourceTree = "<group>"; };
+		4D04A0E723CCA9F600D0EACD /* DetailPeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleListView.swift; sourceTree = "<group>"; };
 		4DD4454B23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MayTheForceBeWith_JeffersonSB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD4454E23C926EC00F44849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DD4455523C926EC00F44849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -183,6 +197,28 @@
 			path = MayTheForceBeWith_JeffersonSBUITests;
 			sourceTree = "<group>";
 		};
+		4D04A0D923CCA38C00D0EACD /* DetailPeople */ = {
+			isa = PBXGroup;
+			children = (
+				4D04A0E423CCA70E00D0EACD /* View */,
+				4D04A0DB23CCA45500D0EACD /* DetailPeopleSectionController.swift */,
+				4D04A0DE23CCA45500D0EACD /* DetailPeopleWidgetBuilder.swift */,
+				4D04A0DD23CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift */,
+				4D04A0DC23CCA45500D0EACD /* DetailPeopleWidgetPresenter.swift */,
+				4D04A0DA23CCA45500D0EACD /* DetailPeopleWidgetViewController.swift */,
+			);
+			path = DetailPeople;
+			sourceTree = "<group>";
+		};
+		4D04A0E423CCA70E00D0EACD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D04A0E523CCA73500D0EACD /* DetailPeopleListCell.swift */,
+				4D04A0E723CCA9F600D0EACD /* DetailPeopleListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4DD4454223C926EC00F44849 = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +257,7 @@
 		4DD4457E23C9B67500F44849 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4D04A0D923CCA38C00D0EACD /* DetailPeople */,
 				4DD4457F23C9B6B600F44849 /* People */,
 			);
 			path = Modules;
@@ -594,13 +631,20 @@
 				4DD445B123CAFF1500F44849 /* Configurable.swift in Sources */,
 				4DD4458D23C9C9EF00F44849 /* PeopleProvider.swift in Sources */,
 				4DD445B823CB07CF00F44849 /* TitleSectionHeaderView.swift in Sources */,
+				4D04A0E823CCA9F600D0EACD /* DetailPeopleListView.swift in Sources */,
 				4DD4458723C9C6C000F44849 /* Router.swift in Sources */,
+				4D04A0E023CCA45500D0EACD /* DetailPeopleSectionController.swift in Sources */,
+				4D04A0E223CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift in Sources */,
 				4D04A07E23CB32ED00D0EACD /* UINavigationBar+Extension.swift in Sources */,
 				4DD445AB23CAF1B700F44849 /* PeopleListViewModel.swift in Sources */,
+				4D04A0E623CCA73500D0EACD /* DetailPeopleListCell.swift in Sources */,
+				4D04A0E123CCA45500D0EACD /* DetailPeopleWidgetPresenter.swift in Sources */,
 				4DD4459223CA28C700F44849 /* PeopleModel.swift in Sources */,
 				4DD4459623CA31A800F44849 /* PeopleAPIs.swift in Sources */,
 				4DD4454F23C926EC00F44849 /* AppDelegate.swift in Sources */,
+				4D04A0DF23CCA45500D0EACD /* DetailPeopleWidgetViewController.swift in Sources */,
 				4DD445A023CA3A4A00F44849 /* AppEntity.swift in Sources */,
+				4D04A0E323CCA45500D0EACD /* DetailPeopleWidgetBuilder.swift in Sources */,
 				4DD4458123C9B74000F44849 /* PeopleWidgetViewController.swift in Sources */,
 				4DD445AD23CAFC2D00F44849 /* PeopleListCell.swift in Sources */,
 				4DD445A823CAE9D300F44849 /* PeopleListView.swift in Sources */,

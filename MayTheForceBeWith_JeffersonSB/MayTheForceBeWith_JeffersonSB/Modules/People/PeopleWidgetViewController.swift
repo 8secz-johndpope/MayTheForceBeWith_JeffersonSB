@@ -12,6 +12,7 @@ import IGListKit
 protocol PeopleWidgetDisplayLogic: AnyObject {
     func displayPeople(presentResult: [PeopleListCell.ViewModel])
     func displayError(with error: String)
+    func displayDetail(viewController: UIViewController)
 }
 
 final class PeopleWidgetViewController: UIViewController {
@@ -85,6 +86,10 @@ extension PeopleWidgetViewController: PeopleWidgetDisplayLogic {
     func displayPeople(presentResult: [PeopleListCell.ViewModel]) {
         viewModel = presentResult
         adapter.performUpdates(animated: true, completion: nil)
+    }
+    
+    func displayDetail(viewController: UIViewController) {
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

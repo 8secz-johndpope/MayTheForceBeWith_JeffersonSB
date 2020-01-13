@@ -17,9 +17,9 @@ final class Router: NSObject {
     }
     
     static func detailViewController() -> UIViewController {
-        let viewController: UIViewController = PeopleWidgetBuilder()
+        let viewController: UIViewController = DetailPeopleWidgetBuilder()
             .build()
-
+        viewController.title = "About"
         return viewController
     }
 }

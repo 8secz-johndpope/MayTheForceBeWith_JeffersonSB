@@ -12,6 +12,7 @@ protocol PeopleWidgetBusinessLogic {
     func fechPeople()
     func loadMore()
     func searchPeople(name: String)
+    func segueDetail()
 }
 
 final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
@@ -82,5 +83,10 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
             return nameParts.contains { predicate.evaluate(with: $0) } || name.hasPrefix(text)
         }
         return filtered
+    }
+    
+    func segueDetail() {
+        let controller = Router.detailViewController()
+        presenter.presentDetail(controller: controller)
     }
 }

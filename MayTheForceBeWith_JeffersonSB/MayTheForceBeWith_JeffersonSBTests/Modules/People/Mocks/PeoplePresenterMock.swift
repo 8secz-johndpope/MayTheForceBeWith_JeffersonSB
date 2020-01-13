@@ -10,9 +10,10 @@ import XCTest
 @testable import MayTheForceBeWith_JeffersonSB
 
 class PeoplePresenterMock: PeopleWidgetPresentationLogic {
-    
+
     var presentPeoples = false
     var presentError = false
+    var presentDetail = false
     
     func presentPeoples(response: [PeopleResult]) {
         presentPeoples = true
@@ -20,5 +21,9 @@ class PeoplePresenterMock: PeopleWidgetPresentationLogic {
     
     func presentError(with error: String) {
         presentError = true
+    }
+    
+    func presentDetail(controller: UIViewController) {
+        presentDetail = true
     }
 }

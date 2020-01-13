@@ -1,23 +1,22 @@
 //
-//  PeopleListCell.swift
+//  DetailPeopleListCell.swift
 //  MayTheForceBeWith_JeffersonSB
 //
-//  Created by Jefferson Batista on 12/01/2020.
+//  Created by Jefferson Batista on 13/01/2020.
 //  Copyright © 2020 Jefferson S Batista. All rights reserved.
 //
 
 import Foundation
 import IGListKit
 
-extension PeopleListCell {
+extension DetailPeopleListCell {
     struct Appearance {
         let buttonSize = CGSize(width: 84, height: 24)
         let xxsSpace = 2
     }
 }
 
-class PeopleListCell: UICollectionViewCell {
-    public var onClickAction: (() -> Void)?
+class DetailPeopleListCell: UICollectionViewCell {
     fileprivate let appearance = Appearance()
     
     lazy var nameLabel: UILabel = {
@@ -38,7 +37,6 @@ class PeopleListCell: UICollectionViewCell {
 
     private func commonInit() {
         backgroundColor = .blackShark
-        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onClick)))
         addSubviews()
         makeConstraints()
     }
@@ -52,14 +50,9 @@ class PeopleListCell: UICollectionViewCell {
             make.top.leading.bottom.equalToSuperview().inset(appearance.xxsSpace)
         }
     }
-    
-    @objc
-    func onClick() {
-        onClickAction?()
-    }
 }
 
-extension PeopleListCell: Configurable {
+extension DetailPeopleListCell: Configurable {
     final class ViewModel: ListDiffable {
         let url: String
         let name: String
@@ -77,19 +70,19 @@ extension PeopleListCell: Configurable {
 
         func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
             guard self !== object else { return true }
-            guard let object = object as? PeopleListCell.ViewModel else { return false }
+            guard let object = object as? DetailPeopleListCell.ViewModel else { return false }
             return url == object.url
         }
     }
 
-    func configure(with viewModel: PeopleListCell.ViewModel) {
+    func configure(with viewModel: DetailPeopleListCell.ViewModel) {
         nameLabel.text = viewModel.name
     }
 }
 
-extension PeopleListCell: ListBindable {
+extension DetailPeopleListCell: ListBindable {
     func bindViewModel(_ viewModel: Any) {
-        guard let friendViewModel = viewModel as? PeopleListCell.ViewModel else {
+        guard let friendViewModel = viewModel as? DetailPeopleListCell.ViewModel else {
             return
         }
         configure(with: friendViewModel)

@@ -6,16 +6,16 @@
 //  Copyright © 2020 Jefferson S Batista. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol PeopleWidgetPresentationLogic {
     func presentPeoples(response: [PeopleResult])
     func presentError(with error: String)
+    func presentDetail(controller: UIViewController)
 }
 
 /// Responsible for displaying the module information PeopleWidget
 final class PeopleWidgetPresenter: PeopleWidgetPresentationLogic {
-
     weak var viewController: PeopleWidgetDisplayLogic?
     
     func presentPeoples(response: [PeopleResult]) {
@@ -36,5 +36,7 @@ final class PeopleWidgetPresenter: PeopleWidgetPresentationLogic {
         }
     }
     
-    
+    func presentDetail(controller: UIViewController) {
+        viewController?.displayDetail(viewController: controller)
+    }
 }
