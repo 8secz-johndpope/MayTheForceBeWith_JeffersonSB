@@ -12,6 +12,7 @@
   * [ ] Mark people as favorite
   
   ![progress](https://progress-bar.dev/37 "progress") Coverage UnitTests
+  
   ![progress](https://progress-bar.dev/58 "progress") Coverage UITest
   
   ![progress](https://progress-bar.dev/0 "progress") Accessibility
