@@ -11,7 +11,7 @@
   
   ![progress](https://progress-bar.dev/45 "progress") Detail screen for the selected Person
   
-  ![progress](https://progress-bar.dev/0 "progress") Mark people as favorite
+  ![progress](https://progress-bar.dev/4 "progress") Mark people as favorite
   
   ![progress](https://progress-bar.dev/37 "progress") Coverage UnitTests
   
