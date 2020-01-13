@@ -36,7 +36,6 @@
 		4DD445A023CA3A4A00F44849 /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4459F23CA3A4A00F44849 /* AppEntity.swift */; };
 		4DD445A623CA45C400F44849 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445A523CA45C400F44849 /* AppService.swift */; };
 		4DD445A823CAE9D300F44849 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445A723CAE9D300F44849 /* PeopleListView.swift */; };
-		4DD445AB23CAF1B700F44849 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445AA23CAF1B700F44849 /* PeopleListViewModel.swift */; };
 		4DD445AD23CAFC2D00F44849 /* PeopleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445AC23CAFC2C00F44849 /* PeopleListCell.swift */; };
 		4DD445B123CAFF1500F44849 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445B023CAFF1500F44849 /* Configurable.swift */; };
 		4DD445B323CB04EA00F44849 /* Diffable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445B223CB04EA00F44849 /* Diffable+Extension.swift */; };
@@ -110,7 +109,6 @@
 		4DD4459F23CA3A4A00F44849 /* AppEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntity.swift; sourceTree = "<group>"; };
 		4DD445A523CA45C400F44849 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		4DD445A723CAE9D300F44849 /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
-		4DD445AA23CAF1B700F44849 /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
 		4DD445AC23CAFC2C00F44849 /* PeopleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListCell.swift; sourceTree = "<group>"; };
 		4DD445B023CAFF1500F44849 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		4DD445B223CB04EA00F44849 /* Diffable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diffable+Extension.swift"; sourceTree = "<group>"; };
@@ -267,7 +265,6 @@
 			isa = PBXGroup;
 			children = (
 				4DD4459323CA28D500F44849 /* View */,
-				4DD445A923CAF16600F44849 /* ViewModel */,
 				4DD4459423CA314C00F44849 /* Provider */,
 				4DD4459023CA287C00F44849 /* Model */,
 				4DD4458E23C9CF8700F44849 /* PeopleWidgetBuilder.swift */,
@@ -334,14 +331,6 @@
 				4DD445A523CA45C400F44849 /* AppService.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		4DD445A923CAF16600F44849 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				4DD445AA23CAF1B700F44849 /* PeopleListViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4DD445AE23CAFED500F44849 /* UIComponents */ = {
@@ -636,7 +625,6 @@
 				4D04A0E023CCA45500D0EACD /* DetailPeopleSectionController.swift in Sources */,
 				4D04A0E223CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift in Sources */,
 				4D04A07E23CB32ED00D0EACD /* UINavigationBar+Extension.swift in Sources */,
-				4DD445AB23CAF1B700F44849 /* PeopleListViewModel.swift in Sources */,
 				4D04A0E623CCA73500D0EACD /* DetailPeopleListCell.swift in Sources */,
 				4D04A0E123CCA45500D0EACD /* DetailPeopleWidgetPresenter.swift in Sources */,
 				4DD4459223CA28C700F44849 /* PeopleModel.swift in Sources */,

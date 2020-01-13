@@ -10,6 +10,8 @@ import XCTest
 
 class MayTheForceBeWith_JeffersonSBUITests: XCTestCase {
 
+    let app = XCUIApplication()
+    
     override func setUp() {
         continueAfterFailure = false
     }
@@ -19,31 +21,21 @@ class MayTheForceBeWith_JeffersonSBUITests: XCTestCase {
     }
 
     func testListPeople() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
         app.launch()
-
         app.collectionViews.cells.otherElements.containing(.staticText, identifier:"Obi-Wan Kenobi").element.swipeUp()
-        
         let maytheforcebewithJeffNavigationBar = app.navigationBars["MayTheForceBeWith Jeff"]
         let searchSearchField = maytheforcebewithJeffNavigationBar.searchFields["Search"]
         searchSearchField.tap()
         maytheforcebewithJeffNavigationBar.buttons["Cancel"].tap()
-        
     }
     
     func testListPeopleDetail() {
+        app.launch()
+        app.navigationBars["MayTheForceBeWith Jeff"].searchFields["Search"].tap()
+        app/*@START_MENU_TOKEN@*/.otherElements["PopoverDismissRegion"]/*[[".otherElements[\"dismiss popup\"]",".otherElements[\"PopoverDismissRegion\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.collectionViews/*@START_MENU_TOKEN@*/.staticTexts["Luke Skywalker"]/*[[".cells.staticTexts[\"Luke Skywalker\"]",".staticTexts[\"Luke Skywalker\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["About"].buttons["MayTheForceBeWith Jeff"].tap()
+        
         
     }
-
-    func testLaunchPerformance() {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
-    
-    
 }
