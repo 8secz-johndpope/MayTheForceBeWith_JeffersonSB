@@ -11,7 +11,7 @@
   * [ ] Show a detail screen for the selected Person
   * [ ] Mark people as favorite
   
-  ![progress](https://progress-bar.dev/34 "progress") Coverage UnitTests + UITest
+  ![progress](https://progress-bar.dev/37 "progress") Coverage UnitTests + UITest
   
   ![progress](https://progress-bar.dev/0 "progress") Accessibility
   
