@@ -1,6 +1,7 @@
 # MayTheForceBeWith JeffSB ![progress](https://progress-bar.dev/58/?title=completed "progress") 
 
   * [x] Deployment Target iOS 9.3+
+  * [x] iOS Design Patterns: VIPER
   * [x] Environments [Developer, Staging, Release]
   * [x] Devices: iPhone and Ipad
   * [x] On people’s list, search for a persons' name is ok.
