@@ -18,9 +18,8 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
     let presenter: PeopleWidgetPresentationLogic
     let provider: ProviderPeople
     var searchText: String?
+    var canLoadMore = false
     private var currentPage = 1
-    private var canLoadMore = false
-    private var hasMoreToLoad = false
     private var cachedPeople: [PeopleResult] = []
 
     init(

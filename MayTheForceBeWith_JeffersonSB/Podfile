@@ -1,6 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.3'
 use_frameworks!
+inhibit_all_warnings!
 
 def helpful
   pod 'SnapKit', '~> 4.0'
@@ -13,10 +14,6 @@ target 'MayTheForceBeWith_JeffersonSB' do
 
   target 'MayTheForceBeWith_JeffersonSBTests' do
     inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'MayTheForceBeWith_JeffersonSBUITests' do
     # Pods for testing
   end
 

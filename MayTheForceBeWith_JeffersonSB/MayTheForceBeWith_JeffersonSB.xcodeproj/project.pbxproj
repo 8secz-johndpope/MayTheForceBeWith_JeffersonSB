@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10F553E1E0E5E22480076E62 /* Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2E88DF43C5EA4E5CB54F2F /* Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework */; };
 		3A2A70A8C62898A266F828D6 /* Pods_MayTheForceBeWith_JeffersonSB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84396F4A092E96B44DCA8B4 /* Pods_MayTheForceBeWith_JeffersonSB.framework */; };
 		4D04A07C23CB18AE00D0EACD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A07B23CB18AE00D0EACD /* UIColor+Extension.swift */; };
 		4D04A07E23CB32ED00D0EACD /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A07D23CB32ED00D0EACD /* UINavigationBar+Extension.swift */; };
+		4D04A0B623CC3DFE00D0EACD /* PeopleWidgetInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0B523CC3DFE00D0EACD /* PeopleWidgetInteractorTests.swift */; };
+		4D04A0C223CC400B00D0EACD /* PeoplePresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0C123CC400B00D0EACD /* PeoplePresenterMock.swift */; };
+		4D04A0C423CC45CA00D0EACD /* PeopleProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0C323CC45CA00D0EACD /* PeopleProviderMock.swift */; };
+		4D04A0CC23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0CB23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.swift */; };
 		4DD4454F23C926EC00F44849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4454E23C926EC00F44849 /* AppDelegate.swift */; };
 		4DD4455623C926EC00F44849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455423C926EC00F44849 /* Main.storyboard */; };
 		4DD4455823C926EE00F44849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455723C926EE00F44849 /* Assets.xcassets */; };
 		4DD4455B23C926EE00F44849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455923C926EE00F44849 /* LaunchScreen.storyboard */; };
-		4DD4456623C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4456523C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests.swift */; };
-		4DD4457123C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4457023C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.swift */; };
 		4DD4458123C9B74000F44849 /* PeopleWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4458023C9B74000F44849 /* PeopleWidgetViewController.swift */; };
 		4DD4458723C9C6C000F44849 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4458623C9C6C000F44849 /* Router.swift */; };
 		4DD4458923C9C9B200F44849 /* PeopleWidgetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4458823C9C9B200F44849 /* PeopleWidgetInteractor.swift */; };
@@ -35,18 +36,18 @@
 		4DD445B523CB05CC00F44849 /* PeopleSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445B423CB05CC00F44849 /* PeopleSectionController.swift */; };
 		4DD445B823CB07CF00F44849 /* TitleSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445B723CB07CF00F44849 /* TitleSectionHeaderView.swift */; };
 		4DD445BB23CB083700F44849 /* LocalSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445BA23CB083700F44849 /* LocalSizes.swift */; };
-		B098B4B7D0EAA6B535A62497 /* Pods_MayTheForceBeWith_JeffersonSBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657C5B8CD43818EF3AD9C41B /* Pods_MayTheForceBeWith_JeffersonSBTests.framework */; };
+		62374DE2F75B9369091C4F10 /* Pods_MayTheForceBeWith_JeffersonSBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657C5B8CD43818EF3AD9C41B /* Pods_MayTheForceBeWith_JeffersonSBTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4DD4456223C926EE00F44849 /* PBXContainerItemProxy */ = {
+		4D04A0B823CC3DFE00D0EACD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DD4454323C926EC00F44849 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4DD4454A23C926EC00F44849;
 			remoteInfo = MayTheForceBeWith_JeffersonSB;
 		};
-		4DD4456D23C926EE00F44849 /* PBXContainerItemProxy */ = {
+		4D04A0CE23CC539100D0EACD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DD4454323C926EC00F44849 /* Project object */;
 			proxyType = 1;
@@ -57,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		097E08F1C0838D5FDAF7A0B8 /* Pods-MayTheForceBeWith_JeffersonSB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSB.release.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSB/Pods-MayTheForceBeWith_JeffersonSB.release.xcconfig"; sourceTree = "<group>"; };
+		0A6349C11E9FC79E88DC40E2 /* Pods_MayTheForceBeWith_JeffSBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceBeWith_JeffSBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		194EEC6072CA4DC6610B2F5C /* Pods-MayTheForceBeWith_JeffSBTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffSBTests.staging.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffSBTests/Pods-MayTheForceBeWith_JeffSBTests.staging.xcconfig"; sourceTree = "<group>"; };
 		20D9C7C7F20AF45F5210663C /* Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.staging.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.staging.xcconfig"; sourceTree = "<group>"; };
 		27C15BC28BE61E82CADD5339 /* Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.release.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2E893090BE120E4C5AB00FD4 /* Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.debug.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,18 +68,20 @@
 		43CECAAF93220644861B5815 /* Pods-MayTheForceBeWith_JeffersonSB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSB.debug.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSB/Pods-MayTheForceBeWith_JeffersonSB.debug.xcconfig"; sourceTree = "<group>"; };
 		4D04A07B23CB18AE00D0EACD /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		4D04A07D23CB32ED00D0EACD /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
-		4DD4454B23C926EC00F44849 /* [D]MayTheForceBeWith-JeffSB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[D]MayTheForceBeWith-JeffSB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D04A0B323CC3DFE00D0EACD /* MayTheForceBeWith_JeffersonSBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayTheForceBeWith_JeffersonSBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D04A0B523CC3DFE00D0EACD /* PeopleWidgetInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleWidgetInteractorTests.swift; sourceTree = "<group>"; };
+		4D04A0B723CC3DFE00D0EACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D04A0C123CC400B00D0EACD /* PeoplePresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePresenterMock.swift; sourceTree = "<group>"; };
+		4D04A0C323CC45CA00D0EACD /* PeopleProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleProviderMock.swift; sourceTree = "<group>"; };
+		4D04A0C923CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayTheForceBeWith_JeffersonSBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D04A0CB23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayTheForceBeWith_JeffersonSBUITests.swift; sourceTree = "<group>"; };
+		4D04A0CD23CC539100D0EACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD4454B23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MayTheForceBeWith_JeffersonSB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD4454E23C926EC00F44849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DD4455523C926EC00F44849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DD4455723C926EE00F44849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DD4455A23C926EE00F44849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DD4455C23C926EE00F44849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DD4456123C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayTheForceBeWith_JeffersonSBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DD4456523C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayTheForceBeWith_JeffersonSBTests.swift; sourceTree = "<group>"; };
-		4DD4456723C926EE00F44849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DD4456C23C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayTheForceBeWith_JeffersonSBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DD4457023C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayTheForceBeWith_JeffersonSBUITests.swift; sourceTree = "<group>"; };
-		4DD4457223C926EE00F44849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DD4458023C9B74000F44849 /* PeopleWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleWidgetViewController.swift; sourceTree = "<group>"; };
 		4DD4458623C9C6C000F44849 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4DD4458823C9C9B200F44849 /* PeopleWidgetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleWidgetInteractor.swift; sourceTree = "<group>"; };
@@ -99,13 +104,30 @@
 		4DD445B723CB07CF00F44849 /* TitleSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSectionHeaderView.swift; sourceTree = "<group>"; };
 		4DD445BA23CB083700F44849 /* LocalSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSizes.swift; sourceTree = "<group>"; };
 		657C5B8CD43818EF3AD9C41B /* Pods_MayTheForceBeWith_JeffersonSBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceBeWith_JeffersonSBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		710F80B01C6CA1E27EF575ED /* Pods-MayTheForceBeWith_JeffSBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffSBTests.debug.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffSBTests/Pods-MayTheForceBeWith_JeffSBTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87290EDEA585EFA6DFFB2736 /* Pods-MayTheForceBeWith_JeffersonSBTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSBTests.staging.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSBTests/Pods-MayTheForceBeWith_JeffersonSBTests.staging.xcconfig"; sourceTree = "<group>"; };
 		8D2E88DF43C5EA4E5CB54F2F /* Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB90A91365788AD2E06E0B /* Pods-MayTheForceBeWith_JeffersonSBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffersonSBTests.debug.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffersonSBTests/Pods-MayTheForceBeWith_JeffersonSBTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A84396F4A092E96B44DCA8B4 /* Pods_MayTheForceBeWith_JeffersonSB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceBeWith_JeffersonSB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E35CB96DF75574F4DF887289 /* Pods-MayTheForceBeWith_JeffSBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_JeffSBTests.release.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_JeffSBTests/Pods-MayTheForceBeWith_JeffSBTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D04A0B023CC3DFE00D0EACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62374DE2F75B9369091C4F10 /* Pods_MayTheForceBeWith_JeffersonSBTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D04A0C623CC539100D0EACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DD4454823C926EC00F44849 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,31 +136,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DD4455E23C926EE00F44849 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B098B4B7D0EAA6B535A62497 /* Pods_MayTheForceBeWith_JeffersonSBTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DD4456923C926EE00F44849 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				10F553E1E0E5E22480076E62 /* Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D04A0B423CC3DFE00D0EACD /* MayTheForceBeWith_JeffersonSBTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D04A0BE23CC3F5E00D0EACD /* Modules */,
+				4D04A0B723CC3DFE00D0EACD /* Info.plist */,
+			);
+			path = MayTheForceBeWith_JeffersonSBTests;
+			sourceTree = "<group>";
+		};
+		4D04A0BE23CC3F5E00D0EACD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4D04A0BF23CC3F6800D0EACD /* People */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4D04A0BF23CC3F6800D0EACD /* People */ = {
+			isa = PBXGroup;
+			children = (
+				4D04A0B523CC3DFE00D0EACD /* PeopleWidgetInteractorTests.swift */,
+				4D04A0C023CC3FCC00D0EACD /* Mocks */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		4D04A0C023CC3FCC00D0EACD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4D04A0C123CC400B00D0EACD /* PeoplePresenterMock.swift */,
+				4D04A0C323CC45CA00D0EACD /* PeopleProviderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4D04A0CA23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D04A0CB23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.swift */,
+				4D04A0CD23CC539100D0EACD /* Info.plist */,
+			);
+			path = MayTheForceBeWith_JeffersonSBUITests;
+			sourceTree = "<group>";
+		};
 		4DD4454223C926EC00F44849 = {
 			isa = PBXGroup;
 			children = (
 				4DD4454D23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB */,
-				4DD4456423C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests */,
-				4DD4456F23C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests */,
+				4D04A0B423CC3DFE00D0EACD /* MayTheForceBeWith_JeffersonSBTests */,
+				4D04A0CA23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests */,
 				4DD4454C23C926EC00F44849 /* Products */,
 				89B6D78AA66A6E6717D06A1F /* Pods */,
 				9F4952C7FD4801CADF3A1F67 /* Frameworks */,
@@ -148,9 +198,9 @@
 		4DD4454C23C926EC00F44849 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4DD4454B23C926EC00F44849 /* [D]MayTheForceBeWith-JeffSB.app */,
-				4DD4456123C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests.xctest */,
-				4DD4456C23C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.xctest */,
+				4DD4454B23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB.app */,
+				4D04A0B323CC3DFE00D0EACD /* MayTheForceBeWith_JeffersonSBTests.xctest */,
+				4D04A0C923CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,32 +208,14 @@
 		4DD4454D23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB */ = {
 			isa = PBXGroup;
 			children = (
-				4DD445AE23CAFED500F44849 /* UIComponents */,
 				4DD4455C23C926EE00F44849 /* Info.plist */,
 				4DD4458223C9BD0500F44849 /* StartUp */,
 				4DD4459E23CA3A2B00F44849 /* Entities */,
 				4DD4459723CA38DB00F44849 /* EnvironmentsConfig */,
+				4DD445AE23CAFED500F44849 /* UIComponents */,
 				4DD4457E23C9B67500F44849 /* Modules */,
 			);
 			path = MayTheForceBeWith_JeffersonSB;
-			sourceTree = "<group>";
-		};
-		4DD4456423C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests */ = {
-			isa = PBXGroup;
-			children = (
-				4DD4456523C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests.swift */,
-				4DD4456723C926EE00F44849 /* Info.plist */,
-			);
-			path = MayTheForceBeWith_JeffersonSBTests;
-			sourceTree = "<group>";
-		};
-		4DD4456F23C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4DD4457023C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.swift */,
-				4DD4457223C926EE00F44849 /* Info.plist */,
-			);
-			path = MayTheForceBeWith_JeffersonSBUITests;
 			sourceTree = "<group>";
 		};
 		4DD4457E23C9B67500F44849 /* Modules */ = {
@@ -324,6 +356,9 @@
 				3FB9F8BB7FE5F30ACC7261BE /* Pods-MayTheForceBeWith_JeffersonSB.staging.xcconfig */,
 				20D9C7C7F20AF45F5210663C /* Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.staging.xcconfig */,
 				87290EDEA585EFA6DFFB2736 /* Pods-MayTheForceBeWith_JeffersonSBTests.staging.xcconfig */,
+				710F80B01C6CA1E27EF575ED /* Pods-MayTheForceBeWith_JeffSBTests.debug.xcconfig */,
+				194EEC6072CA4DC6610B2F5C /* Pods-MayTheForceBeWith_JeffSBTests.staging.xcconfig */,
+				E35CB96DF75574F4DF887289 /* Pods-MayTheForceBeWith_JeffSBTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -334,6 +369,7 @@
 				A84396F4A092E96B44DCA8B4 /* Pods_MayTheForceBeWith_JeffersonSB.framework */,
 				8D2E88DF43C5EA4E5CB54F2F /* Pods_MayTheForceBeWith_JeffersonSB_MayTheForceBeWith_JeffersonSBUITests.framework */,
 				657C5B8CD43818EF3AD9C41B /* Pods_MayTheForceBeWith_JeffersonSBTests.framework */,
+				0A6349C11E9FC79E88DC40E2 /* Pods_MayTheForceBeWith_JeffSBTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -341,6 +377,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4D04A0B223CC3DFE00D0EACD /* MayTheForceBeWith_JeffersonSBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D04A0BA23CC3DFE00D0EACD /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_JeffersonSBTests" */;
+			buildPhases = (
+				363D18019BD50F560996BF3C /* [CP] Check Pods Manifest.lock */,
+				4D04A0AF23CC3DFE00D0EACD /* Sources */,
+				4D04A0B023CC3DFE00D0EACD /* Frameworks */,
+				4D04A0B123CC3DFE00D0EACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D04A0B923CC3DFE00D0EACD /* PBXTargetDependency */,
+			);
+			name = MayTheForceBeWith_JeffersonSBTests;
+			productName = MayTheForceBeWith_JeffersonSBTests;
+			productReference = 4D04A0B323CC3DFE00D0EACD /* MayTheForceBeWith_JeffersonSBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D04A0C823CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D04A0D023CC539100D0EACD /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_JeffersonSBUITests" */;
+			buildPhases = (
+				4D04A0C523CC539100D0EACD /* Sources */,
+				4D04A0C623CC539100D0EACD /* Frameworks */,
+				4D04A0C723CC539100D0EACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D04A0CF23CC539100D0EACD /* PBXTargetDependency */,
+			);
+			name = MayTheForceBeWith_JeffersonSBUITests;
+			productName = MayTheForceBeWith_JeffersonSBUITests;
+			productReference = 4D04A0C923CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		4DD4454A23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DD4457523C926EE00F44849 /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_JeffersonSB" */;
@@ -357,47 +430,8 @@
 			);
 			name = MayTheForceBeWith_JeffersonSB;
 			productName = MayTheForceBeWith_JeffersonSB;
-			productReference = 4DD4454B23C926EC00F44849 /* [D]MayTheForceBeWith-JeffSB.app */;
+			productReference = 4DD4454B23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB.app */;
 			productType = "com.apple.product-type.application";
-		};
-		4DD4456023C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DD4457823C926EE00F44849 /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_JeffersonSBTests" */;
-			buildPhases = (
-				4349EBD386E06073FB1294BC /* [CP] Check Pods Manifest.lock */,
-				4DD4455D23C926EE00F44849 /* Sources */,
-				4DD4455E23C926EE00F44849 /* Frameworks */,
-				4DD4455F23C926EE00F44849 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4DD4456323C926EE00F44849 /* PBXTargetDependency */,
-			);
-			name = MayTheForceBeWith_JeffersonSBTests;
-			productName = MayTheForceBeWith_JeffersonSBTests;
-			productReference = 4DD4456123C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4DD4456B23C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DD4457B23C926EE00F44849 /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_JeffersonSBUITests" */;
-			buildPhases = (
-				07C8A796FCE53421DA9C899F /* [CP] Check Pods Manifest.lock */,
-				4DD4456823C926EE00F44849 /* Sources */,
-				4DD4456923C926EE00F44849 /* Frameworks */,
-				4DD4456A23C926EE00F44849 /* Resources */,
-				2537ECA94FE82DE523B1066D /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4DD4456E23C926EE00F44849 /* PBXTargetDependency */,
-			);
-			name = MayTheForceBeWith_JeffersonSBUITests;
-			productName = MayTheForceBeWith_JeffersonSBUITests;
-			productReference = 4DD4456C23C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -409,16 +443,16 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Jefferson S Batista";
 				TargetAttributes = {
+					4D04A0B223CC3DFE00D0EACD = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 4DD4454A23C926EC00F44849;
+					};
+					4D04A0C823CC539100D0EACD = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 4DD4454A23C926EC00F44849;
+					};
 					4DD4454A23C926EC00F44849 = {
 						CreatedOnToolsVersion = 11.3;
-					};
-					4DD4456023C926EE00F44849 = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 4DD4454A23C926EC00F44849;
-					};
-					4DD4456B23C926EE00F44849 = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 4DD4454A23C926EC00F44849;
 					};
 				};
 			};
@@ -436,13 +470,27 @@
 			projectRoot = "";
 			targets = (
 				4DD4454A23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB */,
-				4DD4456023C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests */,
-				4DD4456B23C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests */,
+				4D04A0B223CC3DFE00D0EACD /* MayTheForceBeWith_JeffersonSBTests */,
+				4D04A0C823CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D04A0B123CC3DFE00D0EACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D04A0C723CC539100D0EACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DD4454923C926EC00F44849 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,62 +501,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DD4455F23C926EE00F44849 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DD4456A23C926EE00F44849 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07C8A796FCE53421DA9C899F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2537ECA94FE82DE523B1066D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests/Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2ACCD9B68A154379EC8241D7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,7 +543,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4349EBD386E06073FB1294BC /* [CP] Check Pods Manifest.lock */ = {
+		363D18019BD50F560996BF3C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -573,6 +568,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D04A0AF23CC3DFE00D0EACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D04A0B623CC3DFE00D0EACD /* PeopleWidgetInteractorTests.swift in Sources */,
+				4D04A0C223CC400B00D0EACD /* PeoplePresenterMock.swift in Sources */,
+				4D04A0C423CC45CA00D0EACD /* PeopleProviderMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D04A0C523CC539100D0EACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D04A0CC23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DD4454723C926EC00F44849 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -601,34 +614,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DD4455D23C926EE00F44849 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DD4456623C926EE00F44849 /* MayTheForceBeWith_JeffersonSBTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DD4456823C926EE00F44849 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DD4457123C926EE00F44849 /* MayTheForceBeWith_JeffersonSBUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4DD4456323C926EE00F44849 /* PBXTargetDependency */ = {
+		4D04A0B923CC3DFE00D0EACD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DD4454A23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB */;
-			targetProxy = 4DD4456223C926EE00F44849 /* PBXContainerItemProxy */;
+			targetProxy = 4D04A0B823CC3DFE00D0EACD /* PBXContainerItemProxy */;
 		};
-		4DD4456E23C926EE00F44849 /* PBXTargetDependency */ = {
+		4D04A0CF23CC539100D0EACD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DD4454A23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB */;
-			targetProxy = 4DD4456D23C926EE00F44849 /* PBXContainerItemProxy */;
+			targetProxy = 4D04A0CE23CC539100D0EACD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -652,6 +649,132 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4D04A0BB23CC3DFE00D0EACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6FB90A91365788AD2E06E0B /* Pods-MayTheForceBeWith_JeffersonSBTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayTheForceBeWith_JeffersonSB.app/MayTheForceBeWith_JeffersonSB";
+			};
+			name = Debug;
+		};
+		4D04A0BC23CC3DFE00D0EACD /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87290EDEA585EFA6DFFB2736 /* Pods-MayTheForceBeWith_JeffersonSBTests.staging.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayTheForceBeWith_JeffersonSB.app/MayTheForceBeWith_JeffersonSB";
+			};
+			name = Staging;
+		};
+		4D04A0BD23CC3DFE00D0EACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D93DE82C351E6C419AD442B /* Pods-MayTheForceBeWith_JeffersonSBTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayTheForceBeWith_JeffersonSB.app/MayTheForceBeWith_JeffersonSB";
+			};
+			name = Release;
+		};
+		4D04A0D123CC539100D0EACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MayTheForceBeWith_JeffersonSB;
+			};
+			name = Debug;
+		};
+		4D04A0D223CC539100D0EACD /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MayTheForceBeWith_JeffersonSB;
+			};
+			name = Staging;
+		};
+		4D04A0D323CC539100D0EACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MayTheForceBeWith_JeffersonSB;
+			};
+			name = Release;
+		};
 		4DD4457323C926EE00F44849 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4DD4459923CA394100F44849 /* ConfigBuild-Debug.xcconfig */;
@@ -782,7 +905,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
-				PRODUCT_NAME = "$(APP_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -802,97 +925,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
-				PRODUCT_NAME = "$(APP_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		4DD4457923C926EE00F44849 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6FB90A91365788AD2E06E0B /* Pods-MayTheForceBeWith_JeffersonSBTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
-				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayTheForceBeWith_JeffersonSB.app/MayTheForceBeWith_JeffersonSB";
-			};
-			name = Debug;
-		};
-		4DD4457A23C926EE00F44849 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D93DE82C351E6C419AD442B /* Pods-MayTheForceBeWith_JeffersonSBTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
-				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayTheForceBeWith_JeffersonSB.app/MayTheForceBeWith_JeffersonSB";
-			};
-			name = Release;
-		};
-		4DD4457C23C926EE00F44849 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E893090BE120E4C5AB00FD4 /* Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
-				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MayTheForceBeWith_JeffersonSB;
-			};
-			name = Debug;
-		};
-		4DD4457D23C926EE00F44849 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27C15BC28BE61E82CADD5339 /* Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
-				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MayTheForceBeWith_JeffersonSB;
 			};
 			name = Release;
 		};
@@ -972,59 +1007,35 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
-				PRODUCT_NAME = "$(APP_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Staging;
-		};
-		4DD445A323CA3AAC00F44849 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87290EDEA585EFA6DFFB2736 /* Pods-MayTheForceBeWith_JeffersonSBTests.staging.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
-				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayTheForceBeWith_JeffersonSB.app/MayTheForceBeWith_JeffersonSB";
-			};
-			name = Staging;
-		};
-		4DD445A423CA3AAC00F44849 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20D9C7C7F20AF45F5210663C /* Pods-MayTheForceBeWith_JeffersonSB-MayTheForceBeWith_JeffersonSBUITests.staging.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
-				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSBUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MayTheForceBeWith_JeffersonSB;
 			};
 			name = Staging;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D04A0BA23CC3DFE00D0EACD /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_JeffersonSBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D04A0BB23CC3DFE00D0EACD /* Debug */,
+				4D04A0BC23CC3DFE00D0EACD /* Staging */,
+				4D04A0BD23CC3DFE00D0EACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4D04A0D023CC539100D0EACD /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_JeffersonSBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D04A0D123CC539100D0EACD /* Debug */,
+				4D04A0D223CC539100D0EACD /* Staging */,
+				4D04A0D323CC539100D0EACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		4DD4454623C926EC00F44849 /* Build configuration list for PBXProject "MayTheForceBeWith_JeffersonSB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1041,26 +1052,6 @@
 				4DD4457623C926EE00F44849 /* Debug */,
 				4DD445A223CA3AAC00F44849 /* Staging */,
 				4DD4457723C926EE00F44849 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		4DD4457823C926EE00F44849 /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_JeffersonSBTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DD4457923C926EE00F44849 /* Debug */,
-				4DD445A323CA3AAC00F44849 /* Staging */,
-				4DD4457A23C926EE00F44849 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		4DD4457B23C926EE00F44849 /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_JeffersonSBUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DD4457C23C926EE00F44849 /* Debug */,
-				4DD445A423CA3AAC00F44849 /* Staging */,
-				4DD4457D23C926EE00F44849 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
