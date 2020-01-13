@@ -1,4 +1,4 @@
-# MayTheForceBeWith JeffSB ![progress](https://progress-bar.dev/67/?title=completed "progress") 
+# MayTheForceBeWith JeffSB ![progress](https://progress-bar.dev/71/?title=completed "progress") 
 
   * [x] Deployment Target iOS 9.3+
   * [x] iOS Design Patterns: VIPER
@@ -9,7 +9,7 @@
   * [x] Paginated 10 people at a time and loading 10 more after bouncing at the bottom.
   * [x] AppIcons OK
   
-  ![progress](https://progress-bar.dev/0 "progress") Show a detail screen for the selected Person
+  ![progress](https://progress-bar.dev/45 "progress") Detail screen for the selected Person
   
   ![progress](https://progress-bar.dev/0 "progress") Mark people as favorite
   
