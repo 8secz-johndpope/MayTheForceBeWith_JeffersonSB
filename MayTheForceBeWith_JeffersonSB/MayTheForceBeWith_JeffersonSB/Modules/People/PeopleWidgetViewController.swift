@@ -12,6 +12,7 @@ import IGListKit
 protocol PeopleWidgetDisplayLogic: AnyObject {
     func displayPeople(presentResult: [PeopleListCell.ViewModel])
     func displayError(with error: String)
+    func displayStopLoad()
     func displayDetail(viewController: UIViewController)
 }
 
@@ -19,9 +20,11 @@ final class PeopleWidgetViewController: UIViewController {
     let interactor: PeopleWidgetBusinessLogic
     private var viewModel: [PeopleListCell.ViewModel]?
     private var searchTask: DispatchWorkItem?
+    private var isLoading = false
     
     let searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
+        searchController.dimsBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.searchBar.barStyle = .black
         return searchController
@@ -53,12 +56,9 @@ final class PeopleWidgetViewController: UIViewController {
         adapter.collectionView = contentView.collectionView
         adapter.dataSource = self
         adapter.scrollViewDelegate = self
-        showSearchBar()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         interactor.fechPeople()
+        startLoading()
+        showSearchBar()
     }
     
     private func showSearchBar() {
@@ -76,20 +76,36 @@ final class PeopleWidgetViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
+    
+    public func startLoading() {
+        isLoading = true
+        contentView.activityIndicator.startLoading()
+    }
+
+    public func stopLoading() {
+        isLoading = false
+        contentView.activityIndicator.stopLoading()
+    }
 }
 
 extension PeopleWidgetViewController: PeopleWidgetDisplayLogic {
     func displayError(with error: String) {
+        stopLoading()
         showAlert(with: error)
     }
     
     func displayPeople(presentResult: [PeopleListCell.ViewModel]) {
+        stopLoading()
         viewModel = presentResult
         adapter.performUpdates(animated: true, completion: nil)
     }
     
     func displayDetail(viewController: UIViewController) {
         navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func displayStopLoad() {
+        stopLoading()
     }
 }
 
@@ -122,8 +138,10 @@ extension PeopleWidgetViewController: ListAdapterDataSource {
 
 extension PeopleWidgetViewController: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height) {
+        if scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)
+            && !isLoading {
             // reach bottom
+            startLoading()
             interactor.loadMore()
             return
         }

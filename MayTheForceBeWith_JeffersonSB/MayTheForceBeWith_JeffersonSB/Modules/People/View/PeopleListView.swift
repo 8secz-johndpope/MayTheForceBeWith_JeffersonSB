@@ -9,7 +9,20 @@
 import UIKit
 import SnapKit
 
+extension PeopleListView {
+    struct Appearance {
+        let buttonMargin = 25
+    }
+}
+
 class PeopleListView: UIView {
+    public var showActivity: (() -> Void)?
+    public var hideActivity: (() -> Void)?
+    
+    fileprivate let appearance = Appearance()
+    
+    lazy var activityIndicator = ActivityIndicatorView()
+    
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -37,11 +50,17 @@ class PeopleListView: UIView {
 
     func addSubviews() {
         addSubview(collectionView)
+        addSubview(activityIndicator)
     }
 
     func makeConstraints() {
         collectionView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
+        }
+        
+        activityIndicator.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().inset(appearance.buttonMargin)
         }
     }
 

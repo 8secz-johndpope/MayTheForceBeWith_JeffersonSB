@@ -48,11 +48,15 @@ final class DetailPeopleWidgetPresenter: DetailPeopleWidgetPresentationLogic {
         let mirroredObject = Mirror(reflecting: people)
         var viewModel: [DetailPeopleListCell.ViewModel] = []
         for (_, attr) in mirroredObject.children.enumerated() {
-            if let title: String = attr.label, let subtitle = attr.value as? String {
+            if let title: String = attr.label, var subtitle = attr.value as? String {
+                if title == "created" || title == "edited" {
+                    subtitle = Date.getFormattedDate(string: subtitle)
+                }
+                
                 viewModel.append(
                     DetailPeopleListCell.ViewModel(
                         title: title.uppercased(),
-                        subtitle: subtitle
+                        subtitle: subtitle.capitalized
                     )
                 )
             }

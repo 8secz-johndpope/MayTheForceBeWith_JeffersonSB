@@ -44,40 +44,42 @@ class PeopleWidgetInteractorTests: XCTestCase {
     }
 
     override func tearDown() {
-        presenter.presentPeoples = false
-        presenter.presentError = false
+        presenter.peoplesPresent = false
+        presenter.errorPresent = false
+        presenter.detailPresent = false
+        presenter.stopLoadPresent = false
     }
 
     func testInteractorFechPeopleSuccess() {
         provider.testErrors(with: false)
         interactor.fechPeople()
-        XCTAssertTrue(presenter.presentPeoples)
+        XCTAssertTrue(presenter.peoplesPresent)
     }
     
     func testInteractorLoadMoreSuccess() {
         provider.testErrors(with: false)
         interactor.canLoadMore = true
         interactor.loadMore()
-        XCTAssertTrue(presenter.presentPeoples)
+        XCTAssertTrue(presenter.peoplesPresent)
     }
     
     func testInteractorSegueDetaill() {
         provider.testErrors(with: false)
         
         interactor.segueDetail(url: "https://swapi.co/api/people/1/")
-        XCTAssertTrue(presenter.presentDetail)
+        XCTAssertTrue(presenter.detailPresent)
     }
     
     func testInteractorFechPeopleFailure() {
         provider.testErrors(with: true)
         interactor.fechPeople()
-        XCTAssertTrue(presenter.presentError)
+        XCTAssertTrue(presenter.errorPresent)
     }
     
     func testInteractorLoadMoreFailure() {
         provider.testErrors(with: true)
         interactor.canLoadMore = true
         interactor.loadMore()
-        XCTAssertTrue(presenter.presentError)
+        XCTAssertTrue(presenter.stopLoadPresent)
     }
 }

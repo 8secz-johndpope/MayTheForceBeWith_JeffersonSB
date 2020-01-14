@@ -12,6 +12,7 @@ protocol PeopleWidgetPresentationLogic {
     func presentPeoples(response: [PeopleResult])
     func presentError(with error: String)
     func presentDetail(controller: UIViewController)
+    func presentStopLoad()
 }
 
 /// Responsible for displaying the module information PeopleWidget
@@ -29,6 +30,10 @@ final class PeopleWidgetPresenter: PeopleWidgetPresentationLogic {
     
     func presentDetail(controller: UIViewController) {
         viewController?.displayDetail(viewController: controller)
+    }
+    
+    func presentStopLoad() {
+        viewController?.displayStopLoad()
     }
     
     func transform(peoples: [PeopleResult]) -> [PeopleListCell.ViewModel] {

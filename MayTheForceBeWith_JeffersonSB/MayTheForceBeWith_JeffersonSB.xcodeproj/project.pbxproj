@@ -29,6 +29,8 @@
 		4D6A91B823CDFF97003C756F /* DetailPeopleWidgetInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91B723CDFF97003C756F /* DetailPeopleWidgetInteractorTests.swift */; };
 		4D6A91BB23CE0032003C756F /* DetailPeoplePresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91BA23CE0032003C756F /* DetailPeoplePresenterMock.swift */; };
 		4D6A91BD23CE0147003C756F /* DetailPeopleProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91BC23CE0147003C756F /* DetailPeopleProviderMock.swift */; };
+		4D6A91BF23CE57BB003C756F /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91BE23CE57BA003C756F /* ActivityIndicatorView.swift */; };
+		4D6A91C123CE64A3003C756F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91C023CE64A3003C756F /* Date+Extension.swift */; };
 		4DD4454F23C926EC00F44849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4454E23C926EC00F44849 /* AppDelegate.swift */; };
 		4DD4455623C926EC00F44849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455423C926EC00F44849 /* Main.storyboard */; };
 		4DD4455823C926EE00F44849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455723C926EE00F44849 /* Assets.xcassets */; };
@@ -105,6 +107,8 @@
 		4D6A91B723CDFF97003C756F /* DetailPeopleWidgetInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleWidgetInteractorTests.swift; sourceTree = "<group>"; };
 		4D6A91BA23CE0032003C756F /* DetailPeoplePresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeoplePresenterMock.swift; sourceTree = "<group>"; };
 		4D6A91BC23CE0147003C756F /* DetailPeopleProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleProviderMock.swift; sourceTree = "<group>"; };
+		4D6A91BE23CE57BA003C756F /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		4D6A91C023CE64A3003C756F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		4DD4454B23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MayTheForceBeWith_JeffersonSB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD4454E23C926EC00F44849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DD4455523C926EC00F44849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -406,6 +410,7 @@
 				4DD445B223CB04EA00F44849 /* Diffable+Extension.swift */,
 				4D04A07B23CB18AE00D0EACD /* UIColor+Extension.swift */,
 				4D04A07D23CB32ED00D0EACD /* UINavigationBar+Extension.swift */,
+				4D6A91C023CE64A3003C756F /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -414,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				4DD445B723CB07CF00F44849 /* TitleSectionHeaderView.swift */,
+				4D6A91BE23CE57BA003C756F /* ActivityIndicatorView.swift */,
 			);
 			path = Molecules;
 			sourceTree = "<group>";
@@ -684,6 +690,7 @@
 				4D6A91B023CD9406003C756F /* DetailPeopleViewModelType.swift in Sources */,
 				4DD4458723C9C6C000F44849 /* Router.swift in Sources */,
 				4D6A91AB23CD8602003C756F /* FavoritePeopleSectionController.swift in Sources */,
+				4D6A91C123CE64A3003C756F /* Date+Extension.swift in Sources */,
 				4D04A0E023CCA45500D0EACD /* DetailPeopleSectionController.swift in Sources */,
 				4D04A0E223CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift in Sources */,
 				4D04A07E23CB32ED00D0EACD /* UINavigationBar+Extension.swift in Sources */,
@@ -692,6 +699,7 @@
 				4DD4459223CA28C700F44849 /* PeopleModel.swift in Sources */,
 				4DD4459623CA31A800F44849 /* PeopleAPIs.swift in Sources */,
 				4DD4454F23C926EC00F44849 /* AppDelegate.swift in Sources */,
+				4D6A91BF23CE57BB003C756F /* ActivityIndicatorView.swift in Sources */,
 				4D04A0DF23CCA45500D0EACD /* DetailPeopleWidgetViewController.swift in Sources */,
 				4DD445A023CA3A4A00F44849 /* AppEntity.swift in Sources */,
 				4D04A0E323CCA45500D0EACD /* DetailPeopleWidgetBuilder.swift in Sources */,

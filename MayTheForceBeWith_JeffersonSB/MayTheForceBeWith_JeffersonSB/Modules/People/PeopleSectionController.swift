@@ -35,7 +35,7 @@ class PeopleSectionController: ListSectionController {
         }
         cell.configure(with: viewModel)
         cell.onClickAction = { [weak self] in
-            guard let self = self else { return }
+            guard let self = self, let viewModel = self.viewModel else { return }
             self.interactor.segueDetail(url: viewModel.url)
         }
 

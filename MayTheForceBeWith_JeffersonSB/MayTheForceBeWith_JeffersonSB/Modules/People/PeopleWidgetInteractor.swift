@@ -38,12 +38,14 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
             self?.canLoadMore = !response.next.isEmpty
             self?.presenter.presentPeoples(response: response.results)
         }, failure: { error in
+            self.canLoadMore = false
             self.presenter.presentError(with: error)
         })
     }
     
     func loadMore() {
         guard canLoadMore else {
+            self.presenter.presentStopLoad()
             return
         }
         canLoadMore = false
@@ -54,7 +56,7 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
             guard let peoples = self?.cachedPeople else { return }
             self?.presenter.presentPeoples(response: peoples)
         }, failure: { error in
-            self.presenter.presentError(with: error)
+            self.presenter.presentStopLoad()
         })
     }
     
