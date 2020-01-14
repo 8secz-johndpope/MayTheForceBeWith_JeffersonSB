@@ -98,9 +98,9 @@ extension DetailPeopleListCell: Configurable {
 
 extension DetailPeopleListCell: ListBindable {
     func bindViewModel(_ viewModel: Any) {
-        guard let friendViewModel = viewModel as? DetailPeopleListCell.ViewModel else {
+        guard let detailViewModel = viewModel as? DetailPeopleListCell.ViewModel else {
             return
         }
-        configure(with: friendViewModel)
+        configure(with: detailViewModel)
     }
 }

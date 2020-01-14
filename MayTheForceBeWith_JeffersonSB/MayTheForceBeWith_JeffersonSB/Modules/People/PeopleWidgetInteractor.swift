@@ -12,12 +12,12 @@ protocol PeopleWidgetBusinessLogic {
     func fechPeople()
     func loadMore()
     func searchPeople(name: String)
-    func segueDetail(index: Int)
+    func segueDetail(url: String)
 }
 
 final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
     let presenter: PeopleWidgetPresentationLogic
-    let provider: ProviderPeople
+    let provider: PeopleProviderProtocol
     var searchText: String?
     var canLoadMore = false
     private var currentPage = 1
@@ -25,7 +25,7 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
 
     init(
         presenter: PeopleWidgetPresentationLogic,
-        provider: ProviderPeople
+        provider: PeopleProviderProtocol
     ) {
         self.presenter = presenter
         self.provider = provider
@@ -85,11 +85,10 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
         return filtered
     }
     
-    func segueDetail(index: Int) {
-        guard cachedPeople.indices.contains(index) else {
+    func segueDetail(url: String) {
+        guard let peopleDetail = cachedPeople.filter({$0.url == url}).first else {
             return
         }
-        let peopleDetail = cachedPeople[index]
         let controller = Router.detailViewController(peopleDetail: peopleDetail)
         presenter.presentDetail(controller: controller)
     }

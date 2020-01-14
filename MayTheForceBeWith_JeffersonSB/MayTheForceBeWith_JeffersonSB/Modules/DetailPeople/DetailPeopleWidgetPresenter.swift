@@ -9,7 +9,8 @@
 import Foundation
 
 protocol DetailPeopleWidgetPresentationLogic {
-    func presentPeopleDetail(detail: PeopleResult)
+    func presentUnFavoritedPeople(detail: PeopleResult)
+    func presentFavoritedPeople(detail: PeopleResult)
     func presentError(with error: String)
 }
 
@@ -21,9 +22,26 @@ final class DetailPeopleWidgetPresenter: DetailPeopleWidgetPresentationLogic {
         viewController?.displayError(with: error)
     }
     
-    func presentPeopleDetail(detail: PeopleResult) {
+    func presentUnFavoritedPeople(detail: PeopleResult) {
         let peopleDetail = transform(with: detail)
-        viewController?.displayPeopleDetail(model: peopleDetail)
+        let viewModel = DetailPeopleWidgetViewModel(
+            items: [
+                .favoriteCell(FavoritePeopleListCell.ViewModel(isFavorite: false)),
+                .detailCell(peopleDetail)
+            ]
+        )
+        viewController?.displayPeopleDetail(model: viewModel)
+    }
+    
+    func presentFavoritedPeople(detail: PeopleResult) {
+        let peopleDetail = transform(with: detail)
+        let viewModel = DetailPeopleWidgetViewModel(
+            items: [
+                .favoriteCell(FavoritePeopleListCell.ViewModel(isFavorite: true)),
+                .detailCell(peopleDetail)
+            ]
+        )
+        viewController?.displayPeopleDetail(model: viewModel)
     }
     
     func transform(with people: PeopleResult) -> [DetailPeopleListCell.ViewModel] {

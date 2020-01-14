@@ -10,14 +10,15 @@ import UIKit
 import IGListKit
 
 protocol DetailPeopleWidgetDisplayLogic: AnyObject {
-    func displayPeopleDetail(model: [DetailPeopleListCell.ViewModel])
+    func displayPeopleDetail(model: DetailPeopleWidgetViewModel)
     func displayError(with error: String)
 }
 
 final class DetailPeopleWidgetViewController: UIViewController {
     let interactor: DetailPeopleWidgetBusinessLogic
     let peopleDetail: PeopleResult
-    private var viewModel: [DetailPeopleListCell.ViewModel]?
+    private var viewModel: DetailPeopleWidgetViewModel?
+    private var favoriteViewModel: [FavoritePeopleListCell.ViewModel]?
     
     lazy var contentView = DetailPeopleListView(frame: UIScreen.main.bounds)
     
@@ -61,7 +62,7 @@ final class DetailPeopleWidgetViewController: UIViewController {
 }
 
 extension DetailPeopleWidgetViewController: DetailPeopleWidgetDisplayLogic {
-    func displayPeopleDetail(model: [DetailPeopleListCell.ViewModel]) {
+    func displayPeopleDetail(model: DetailPeopleWidgetViewModel) {
         viewModel = model
         adapter.performUpdates(animated: true, completion: nil)
     }
@@ -74,11 +75,19 @@ extension DetailPeopleWidgetViewController: DetailPeopleWidgetDisplayLogic {
 extension DetailPeopleWidgetViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
         guard let viewModel = viewModel else { return [] }
-        return viewModel as [ListDiffable]
+        let all = viewModel.items.flatMap { $0.diffable() }
+        return all
     }
 
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        return DetailPeopleSectionController(interactor: interactor)
+        switch object {
+        case is FavoritePeopleListCell.ViewModel:
+            return FavoritePeopleSectionController(interactor: interactor)
+        case is DetailPeopleListCell.ViewModel:
+            return DetailPeopleSectionController(interactor: interactor)
+        default:
+            fatalError("Undefined model: DetailPeopleWidgetViewController \(#line)")
+        }
     }
 
     func emptyView(for listAdapter: ListAdapter) -> UIView? {

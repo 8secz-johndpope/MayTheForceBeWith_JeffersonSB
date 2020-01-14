@@ -17,7 +17,7 @@ public final class DetailPeopleWidgetBuilder {
     
     public func build() -> UIViewController {
         let presenter = DetailPeopleWidgetPresenter()
-        let provider = PeopleProvider()
+        let provider = DetailPeopleProvider()
         let interactor = DetailPeopleWidgetInteractor(
             presenter: presenter,
             provider: provider

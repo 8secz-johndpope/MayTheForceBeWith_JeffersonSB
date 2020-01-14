@@ -18,3 +18,4 @@ APP_BUNDLE_VERSION=1
 
 //Urls
 URL_BASE=$(HTTPS)swapi.co/api
+URL_POST=$(HTTP)webhook.site/f9f044a0-0442-41e8-a5b4-50caf8ee4cf9

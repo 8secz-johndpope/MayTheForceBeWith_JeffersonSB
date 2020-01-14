@@ -10,21 +10,18 @@ import Foundation
 
 protocol DetailPeopleWidgetBusinessLogic {
     func fechPeopleDetail(detail: PeopleResult)
+    func doFavorite(isFavorite: Bool)
 }
 
 final class DetailPeopleWidgetInteractor: DetailPeopleWidgetBusinessLogic {
     let presenter: DetailPeopleWidgetPresentationLogic
-    let provider: ProviderPeople
+    let provider: DetailPeopleProviderProtocol
     
-    var searchText: String?
-    var canLoadMore = false
-    
-    private var currentPage = 1
-    private var cachedPeople: [PeopleResult] = []
+    private var cachedDetail: PeopleResult?
 
     init(
         presenter: DetailPeopleWidgetPresentationLogic,
-        provider: ProviderPeople
+        provider: DetailPeopleProviderProtocol
     ) {
         self.presenter = presenter
         self.provider = provider
@@ -32,6 +29,22 @@ final class DetailPeopleWidgetInteractor: DetailPeopleWidgetBusinessLogic {
     }
     
     func fechPeopleDetail(detail: PeopleResult) {
-        presenter.presentPeopleDetail(detail: detail)
+        cachedDetail = detail
+        presenter.presentUnFavoritedPeople(detail: detail)
+    }
+    
+    func doFavorite(isFavorite: Bool) {
+        guard let peopleDetail = cachedDetail else {
+           return presenter.presentError(with: "This person was not found")
+        }
+        provider.favoritePeople(success: { [weak self] response in
+            if isFavorite {
+                self?.presenter.presentUnFavoritedPeople(detail: peopleDetail)
+            } else {
+                self?.presenter.presentFavoritedPeople(detail: peopleDetail)
+            }
+        }, failure: { error in
+            self.presenter.presentError(with: error)
+        })
     }
 }
