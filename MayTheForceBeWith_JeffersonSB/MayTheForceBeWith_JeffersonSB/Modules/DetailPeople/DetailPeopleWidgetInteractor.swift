@@ -17,7 +17,7 @@ final class DetailPeopleWidgetInteractor: DetailPeopleWidgetBusinessLogic {
     let presenter: DetailPeopleWidgetPresentationLogic
     let provider: DetailPeopleProviderProtocol
     
-    private var cachedDetail: PeopleResult?
+    var cachedDetail: PeopleResult?
 
     init(
         presenter: DetailPeopleWidgetPresentationLogic,

@@ -35,7 +35,12 @@ class MayTheForceBeWith_JeffersonSBUITests: XCTestCase {
         app/*@START_MENU_TOKEN@*/.otherElements["PopoverDismissRegion"]/*[[".otherElements[\"dismiss popup\"]",".otherElements[\"PopoverDismissRegion\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.collectionViews/*@START_MENU_TOKEN@*/.staticTexts["Luke Skywalker"]/*[[".cells.staticTexts[\"Luke Skywalker\"]",".staticTexts[\"Luke Skywalker\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.navigationBars["About"].buttons["MayTheForceBeWith Jeff"].tap()
-        
-        
+    }
+    
+    func testFavoritePeople() {
+        app.launch()
+        let collectionViewsQuery = XCUIApplication().collectionViews
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.staticTexts["Luke Skywalker"]/*[[".cells.staticTexts[\"Luke Skywalker\"]",".staticTexts[\"Luke Skywalker\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.staticTexts["Click to favorite"]/*[[".cells.staticTexts[\"Click to favorite\"]",".staticTexts[\"Click to favorite\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
     }
 }

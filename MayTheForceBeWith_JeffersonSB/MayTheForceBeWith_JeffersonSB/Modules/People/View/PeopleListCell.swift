@@ -84,6 +84,8 @@ extension PeopleListCell: Configurable {
 
     func configure(with viewModel: PeopleListCell.ViewModel) {
         nameLabel.text = viewModel.name
+        nameLabel.accessibilityLabel = viewModel.name
+        accessibilityElements = [nameLabel]
     }
 }
 

@@ -1,4 +1,4 @@
-# MayTheForceBeWith JeffSB ![progress](https://progress-bar.dev/86/?title=completed "progress") 
+# MayTheForceBeWith JeffSB ![progress](https://progress-bar.dev/93/?title=completed "progress") 
 
   * [x] Deployment Target iOS 9.3+
   * [x] iOS Design Patterns: VIPER
@@ -10,12 +10,11 @@
   * [x] AppIcons OK
   * [x] Detail screen for the selected Person
   * [x] Mark people as favorite
+  * [x] Accessibility Coverage 100%
   
-  ![progress](https://progress-bar.dev/37 "progress") Coverage UnitTests
+  ![progress](https://progress-bar.dev/28 "progress") Coverage UnitTests
   
-  ![progress](https://progress-bar.dev/62 "progress") Coverage UITest
-  
-  ![progress](https://progress-bar.dev/0 "progress") Accessibility
+  ![progress](https://progress-bar.dev/66 "progress") Coverage UITest
   
   ![progress](https://progress-bar.dev/0 "progress") Loading 10 more activity indicator
 

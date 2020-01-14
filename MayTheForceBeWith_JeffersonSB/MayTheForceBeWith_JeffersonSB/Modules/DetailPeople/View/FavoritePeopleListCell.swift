@@ -98,6 +98,8 @@ extension FavoritePeopleListCell: Configurable {
         let image = viewModel.isFavorite ? "ic_favorite" : "ic_unfavorite"
         favoriteIcon.image = UIImage(named: image)
         descriptionLabel.text = viewModel.isFavorite ? "Favorited" : "Click to favorite"
+        descriptionLabel.accessibilityLabel = descriptionLabel.text
+        accessibilityElements = [descriptionLabel]
     }
 }
 

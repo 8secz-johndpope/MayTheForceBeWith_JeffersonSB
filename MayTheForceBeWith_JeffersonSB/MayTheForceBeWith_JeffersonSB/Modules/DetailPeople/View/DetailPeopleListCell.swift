@@ -93,6 +93,9 @@ extension DetailPeopleListCell: Configurable {
     func configure(with viewModel: DetailPeopleListCell.ViewModel) {
         titleLabel.text = viewModel.title
         subtitleLabel.text = viewModel.subtitle
+        titleLabel.accessibilityLabel = viewModel.title
+        subtitleLabel.accessibilityLabel = viewModel.subtitle
+        accessibilityElements = [titleLabel, subtitleLabel]
     }
 }
 
