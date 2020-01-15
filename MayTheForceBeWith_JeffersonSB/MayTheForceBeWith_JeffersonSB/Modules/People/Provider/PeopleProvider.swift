@@ -12,7 +12,7 @@ import Moya
 public typealias PeopleError = ((_ errorMessage: String) -> Void)
 public typealias FetchPeopleSuccess = ((_ response: PeopleModel) -> Void)
 
-public protocol ProviderPeople {
+public protocol PeopleProviderProtocol {
     func fechPeople(success: @escaping FetchPeopleSuccess, failure: @escaping PeopleError)
     func loadMore(page: Int, success: @escaping FetchPeopleSuccess, failure: @escaping PeopleError)
 }
@@ -33,7 +33,7 @@ public final class PeopleProvider {
     }
 }
 
-extension PeopleProvider: ProviderPeople {
+extension PeopleProvider: PeopleProviderProtocol {
     public func fechPeople(success: @escaping FetchPeopleSuccess, failure: @escaping PeopleError) {
         provider.request(.all) { [weak self] result in
             guard let self = self else { return }
@@ -51,16 +51,16 @@ extension PeopleProvider: ProviderPeople {
     
     public func loadMore(page: Int, success: @escaping FetchPeopleSuccess, failure: @escaping PeopleError) {
         provider.request(.loadMore(page: page)) { [weak self] result in
-               guard let self = self else { return }
-               switch result {
-               case .success(let response):
-                   guard let peopleModel = try? self.decoder.decode(PeopleModel.self, from: response.data) else {
-                      return failure(response.statusCode.description)
-                   }
-                  success(peopleModel)
-               case .failure(let error):
-                   failure(error.localizedDescription)
-             }
-           }
-       }
+            guard let self = self else { return }
+            switch result {
+            case .success(let response):
+               guard let peopleModel = try? self.decoder.decode(PeopleModel.self, from: response.data) else {
+                  return failure(response.statusCode.description)
+               }
+               success(peopleModel)
+            case .failure(let error):
+               failure(error.localizedDescription)
+            }
+        }
+    }
 }

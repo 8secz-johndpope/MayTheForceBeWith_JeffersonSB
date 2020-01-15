@@ -1,18 +1,18 @@
 //
-//  PeopleSectionController.swift
+//  FavoritePeopleSectionController.swift
 //  MayTheForceBeWith_JeffersonSB
 //
-//  Created by Jefferson Batista on 12/01/2020.
+//  Created by Jefferson Batista on 14/01/2020.
 //  Copyright © 2020 Jefferson S Batista. All rights reserved.
 //
 
 import IGListKit
 
-class PeopleSectionController: ListSectionController {
-    private var viewModel: PeopleListCell.ViewModel?
-    let interactor: PeopleWidgetBusinessLogic
+class FavoritePeopleSectionController: ListSectionController {
+    private var viewModel: FavoritePeopleListCell.ViewModel?
+    let interactor: DetailPeopleWidgetBusinessLogic
 
-    init(interactor: PeopleWidgetBusinessLogic) {
+    init(interactor: DetailPeopleWidgetBusinessLogic) {
         self.interactor = interactor
     }
 
@@ -26,24 +26,27 @@ class PeopleSectionController: ListSectionController {
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         guard
             let cell = collectionContext?.dequeueReusableCell(
-                of: PeopleListCell.self,
+                of: FavoritePeopleListCell.self,
                 for: self, at: index
-            ) as? PeopleListCell,
+            ) as? FavoritePeopleListCell,
             let viewModel = viewModel
         else {
             return UICollectionViewCell()
         }
         cell.configure(with: viewModel)
         cell.onClickAction = { [weak self] in
-            guard let self = self, let viewModel = self.viewModel else { return }
-            self.interactor.segueDetail(url: viewModel.url)
+            guard let self = self else { return }
+            if viewModel.isFavorite {
+                
+            }
+            self.interactor.doFavorite(isFavorite: viewModel.isFavorite)
         }
 
         return cell
     }
 
     override func didUpdate(to object: Any) {
-        viewModel = object as? PeopleListCell.ViewModel
+        viewModel = object as? FavoritePeopleListCell.ViewModel
     }
 }
 

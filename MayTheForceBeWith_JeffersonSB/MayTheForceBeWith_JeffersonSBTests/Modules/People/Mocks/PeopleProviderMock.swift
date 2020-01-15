@@ -9,7 +9,7 @@
 import XCTest
 @testable import MayTheForceBeWith_JeffersonSB
 
-class PeopleProviderMock: NSObject, ProviderPeople {
+class PeopleProviderMock: NSObject, PeopleProviderProtocol {
     private var shouldValidadeError = false
     
     func fechPeople(success: @escaping FetchPeopleSuccess, failure: @escaping PeopleError) {

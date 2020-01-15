@@ -1,28 +1,15 @@
 //
-//  PeopleListView.swift
+//  DetailPeopleListView.swift
 //  MayTheForceBeWith_JeffersonSB
 //
-//  Created by Jefferson Batista on 12/01/2020.
+//  Created by Jefferson Batista on 13/01/2020.
 //  Copyright © 2020 Jefferson S Batista. All rights reserved.
 //
 
 import UIKit
 import SnapKit
 
-extension PeopleListView {
-    struct Appearance {
-        let buttonMargin = 25
-    }
-}
-
-class PeopleListView: UIView {
-    public var showActivity: (() -> Void)?
-    public var hideActivity: (() -> Void)?
-    
-    fileprivate let appearance = Appearance()
-    
-    lazy var activityIndicator = ActivityIndicatorView()
-    
+class DetailPeopleListView: UIView {
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -50,17 +37,11 @@ class PeopleListView: UIView {
 
     func addSubviews() {
         addSubview(collectionView)
-        addSubview(activityIndicator)
     }
 
     func makeConstraints() {
         collectionView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
-        }
-        
-        activityIndicator.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().inset(appearance.buttonMargin)
         }
     }
 

@@ -6,16 +6,17 @@
 //  Copyright © 2020 Jefferson S Batista. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol PeopleWidgetPresentationLogic {
     func presentPeoples(response: [PeopleResult])
     func presentError(with error: String)
+    func presentDetail(controller: UIViewController)
+    func presentStopLoad()
 }
 
 /// Responsible for displaying the module information PeopleWidget
 final class PeopleWidgetPresenter: PeopleWidgetPresentationLogic {
-
     weak var viewController: PeopleWidgetDisplayLogic?
     
     func presentPeoples(response: [PeopleResult]) {
@@ -27,6 +28,14 @@ final class PeopleWidgetPresenter: PeopleWidgetPresentationLogic {
         viewController?.displayError(with: error)
     }
     
+    func presentDetail(controller: UIViewController) {
+        viewController?.displayDetail(viewController: controller)
+    }
+    
+    func presentStopLoad() {
+        viewController?.displayStopLoad()
+    }
+    
     func transform(peoples: [PeopleResult]) -> [PeopleListCell.ViewModel] {
         return peoples.compactMap { people in
             PeopleListCell.ViewModel(
@@ -35,6 +44,4 @@ final class PeopleWidgetPresenter: PeopleWidgetPresentationLogic {
             )
         }
     }
-    
-    
 }

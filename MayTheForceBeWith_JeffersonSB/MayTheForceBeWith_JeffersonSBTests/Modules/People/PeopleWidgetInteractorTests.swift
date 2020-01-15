@@ -22,37 +22,64 @@ class PeopleWidgetInteractorTests: XCTestCase {
             presenter: presenter,
             provider: provider
         )
+        
+        interactor.cachedPeople.append(PeopleResult(
+            name: "Luke Skywalker",
+            height: "172",
+            mass: "77",
+            hairColor: "blond",
+            skinColor: "fair",
+            eyeColor: "blue",
+            birthYear: "19BBY",
+            gender: "male",
+            homeworld: "https://swapi.co/api/planets/1/",
+            films: [],
+            species: [],
+            vehicles: [],
+            starships: [],
+            created: "2014-12-09T13:50:51.644000Z",
+            edited: "2014-12-20T21:17:56.891000Z",
+            url: "https://swapi.co/api/people/1/")
+        )
     }
 
     override func tearDown() {
-        presenter.presentPeoples = false
-        presenter.presentError = false
+        presenter.peoplesPresent = false
+        presenter.errorPresent = false
+        presenter.detailPresent = false
+        presenter.stopLoadPresent = false
     }
 
     func testInteractorFechPeopleSuccess() {
         provider.testErrors(with: false)
         interactor.fechPeople()
-        XCTAssertTrue(presenter.presentPeoples)
+        XCTAssertTrue(presenter.peoplesPresent)
     }
     
     func testInteractorLoadMoreSuccess() {
         provider.testErrors(with: false)
         interactor.canLoadMore = true
         interactor.loadMore()
-        XCTAssertTrue(presenter.presentPeoples)
+        XCTAssertTrue(presenter.peoplesPresent)
+    }
+    
+    func testInteractorSegueDetaill() {
+        provider.testErrors(with: false)
+        
+        interactor.segueDetail(url: "https://swapi.co/api/people/1/")
+        XCTAssertTrue(presenter.detailPresent)
     }
     
     func testInteractorFechPeopleFailure() {
         provider.testErrors(with: true)
         interactor.fechPeople()
-        XCTAssertTrue(presenter.presentError)
+        XCTAssertTrue(presenter.errorPresent)
     }
     
     func testInteractorLoadMoreFailure() {
         provider.testErrors(with: true)
         interactor.canLoadMore = true
         interactor.loadMore()
-        XCTAssertTrue(presenter.presentError)
+        XCTAssertTrue(presenter.stopLoadPresent)
     }
-
 }

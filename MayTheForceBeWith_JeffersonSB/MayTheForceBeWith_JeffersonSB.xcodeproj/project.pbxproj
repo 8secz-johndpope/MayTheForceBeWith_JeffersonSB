@@ -14,6 +14,23 @@
 		4D04A0C223CC400B00D0EACD /* PeoplePresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0C123CC400B00D0EACD /* PeoplePresenterMock.swift */; };
 		4D04A0C423CC45CA00D0EACD /* PeopleProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0C323CC45CA00D0EACD /* PeopleProviderMock.swift */; };
 		4D04A0CC23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0CB23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.swift */; };
+		4D04A0DF23CCA45500D0EACD /* DetailPeopleWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0DA23CCA45500D0EACD /* DetailPeopleWidgetViewController.swift */; };
+		4D04A0E023CCA45500D0EACD /* DetailPeopleSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0DB23CCA45500D0EACD /* DetailPeopleSectionController.swift */; };
+		4D04A0E123CCA45500D0EACD /* DetailPeopleWidgetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0DC23CCA45500D0EACD /* DetailPeopleWidgetPresenter.swift */; };
+		4D04A0E223CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0DD23CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift */; };
+		4D04A0E323CCA45500D0EACD /* DetailPeopleWidgetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0DE23CCA45500D0EACD /* DetailPeopleWidgetBuilder.swift */; };
+		4D04A0E623CCA73500D0EACD /* DetailPeopleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0E523CCA73500D0EACD /* DetailPeopleListCell.swift */; };
+		4D04A0E823CCA9F600D0EACD /* DetailPeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04A0E723CCA9F600D0EACD /* DetailPeopleListView.swift */; };
+		4D6A91AB23CD8602003C756F /* FavoritePeopleSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91AA23CD8602003C756F /* FavoritePeopleSectionController.swift */; };
+		4D6A91AD23CD8646003C756F /* FavoritePeopleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91AC23CD8646003C756F /* FavoritePeopleListCell.swift */; };
+		4D6A91B023CD9406003C756F /* DetailPeopleViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91AF23CD9406003C756F /* DetailPeopleViewModelType.swift */; };
+		4D6A91B323CDA305003C756F /* DetailPeopleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91B223CDA305003C756F /* DetailPeopleProvider.swift */; };
+		4D6A91B523CDA31A003C756F /* DetailPeopleAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91B423CDA31A003C756F /* DetailPeopleAPIs.swift */; };
+		4D6A91B823CDFF97003C756F /* DetailPeopleWidgetInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91B723CDFF97003C756F /* DetailPeopleWidgetInteractorTests.swift */; };
+		4D6A91BB23CE0032003C756F /* DetailPeoplePresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91BA23CE0032003C756F /* DetailPeoplePresenterMock.swift */; };
+		4D6A91BD23CE0147003C756F /* DetailPeopleProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91BC23CE0147003C756F /* DetailPeopleProviderMock.swift */; };
+		4D6A91BF23CE57BB003C756F /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91BE23CE57BA003C756F /* ActivityIndicatorView.swift */; };
+		4D6A91C123CE64A3003C756F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A91C023CE64A3003C756F /* Date+Extension.swift */; };
 		4DD4454F23C926EC00F44849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4454E23C926EC00F44849 /* AppDelegate.swift */; };
 		4DD4455623C926EC00F44849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455423C926EC00F44849 /* Main.storyboard */; };
 		4DD4455823C926EE00F44849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4455723C926EE00F44849 /* Assets.xcassets */; };
@@ -29,7 +46,6 @@
 		4DD445A023CA3A4A00F44849 /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4459F23CA3A4A00F44849 /* AppEntity.swift */; };
 		4DD445A623CA45C400F44849 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445A523CA45C400F44849 /* AppService.swift */; };
 		4DD445A823CAE9D300F44849 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445A723CAE9D300F44849 /* PeopleListView.swift */; };
-		4DD445AB23CAF1B700F44849 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445AA23CAF1B700F44849 /* PeopleListViewModel.swift */; };
 		4DD445AD23CAFC2D00F44849 /* PeopleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445AC23CAFC2C00F44849 /* PeopleListCell.swift */; };
 		4DD445B123CAFF1500F44849 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445B023CAFF1500F44849 /* Configurable.swift */; };
 		4DD445B323CB04EA00F44849 /* Diffable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD445B223CB04EA00F44849 /* Diffable+Extension.swift */; };
@@ -76,6 +92,23 @@
 		4D04A0C923CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayTheForceBeWith_JeffersonSBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D04A0CB23CC539100D0EACD /* MayTheForceBeWith_JeffersonSBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayTheForceBeWith_JeffersonSBUITests.swift; sourceTree = "<group>"; };
 		4D04A0CD23CC539100D0EACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D04A0DA23CCA45500D0EACD /* DetailPeopleWidgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPeopleWidgetViewController.swift; sourceTree = "<group>"; };
+		4D04A0DB23CCA45500D0EACD /* DetailPeopleSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPeopleSectionController.swift; sourceTree = "<group>"; };
+		4D04A0DC23CCA45500D0EACD /* DetailPeopleWidgetPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPeopleWidgetPresenter.swift; sourceTree = "<group>"; };
+		4D04A0DD23CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPeopleWidgetInteractor.swift; sourceTree = "<group>"; };
+		4D04A0DE23CCA45500D0EACD /* DetailPeopleWidgetBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPeopleWidgetBuilder.swift; sourceTree = "<group>"; };
+		4D04A0E523CCA73500D0EACD /* DetailPeopleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleListCell.swift; sourceTree = "<group>"; };
+		4D04A0E723CCA9F600D0EACD /* DetailPeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleListView.swift; sourceTree = "<group>"; };
+		4D6A91AA23CD8602003C756F /* FavoritePeopleSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePeopleSectionController.swift; sourceTree = "<group>"; };
+		4D6A91AC23CD8646003C756F /* FavoritePeopleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePeopleListCell.swift; sourceTree = "<group>"; };
+		4D6A91AF23CD9406003C756F /* DetailPeopleViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleViewModelType.swift; sourceTree = "<group>"; };
+		4D6A91B223CDA305003C756F /* DetailPeopleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleProvider.swift; sourceTree = "<group>"; };
+		4D6A91B423CDA31A003C756F /* DetailPeopleAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleAPIs.swift; sourceTree = "<group>"; };
+		4D6A91B723CDFF97003C756F /* DetailPeopleWidgetInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleWidgetInteractorTests.swift; sourceTree = "<group>"; };
+		4D6A91BA23CE0032003C756F /* DetailPeoplePresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeoplePresenterMock.swift; sourceTree = "<group>"; };
+		4D6A91BC23CE0147003C756F /* DetailPeopleProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleProviderMock.swift; sourceTree = "<group>"; };
+		4D6A91BE23CE57BA003C756F /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		4D6A91C023CE64A3003C756F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		4DD4454B23C926EC00F44849 /* MayTheForceBeWith_JeffersonSB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MayTheForceBeWith_JeffersonSB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD4454E23C926EC00F44849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DD4455523C926EC00F44849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,7 +129,6 @@
 		4DD4459F23CA3A4A00F44849 /* AppEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntity.swift; sourceTree = "<group>"; };
 		4DD445A523CA45C400F44849 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		4DD445A723CAE9D300F44849 /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
-		4DD445AA23CAF1B700F44849 /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
 		4DD445AC23CAFC2C00F44849 /* PeopleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListCell.swift; sourceTree = "<group>"; };
 		4DD445B023CAFF1500F44849 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		4DD445B223CB04EA00F44849 /* Diffable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diffable+Extension.swift"; sourceTree = "<group>"; };
@@ -151,6 +183,7 @@
 		4D04A0BE23CC3F5E00D0EACD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4D6A91B623CDFF6C003C756F /* DetailPeople */,
 				4D04A0BF23CC3F6800D0EACD /* People */,
 			);
 			path = Modules;
@@ -181,6 +214,67 @@
 				4D04A0CD23CC539100D0EACD /* Info.plist */,
 			);
 			path = MayTheForceBeWith_JeffersonSBUITests;
+			sourceTree = "<group>";
+		};
+		4D04A0D923CCA38C00D0EACD /* DetailPeople */ = {
+			isa = PBXGroup;
+			children = (
+				4D6A91B123CDA2CD003C756F /* Provider */,
+				4D6A91AE23CD93E4003C756F /* ViewModel */,
+				4D04A0E423CCA70E00D0EACD /* View */,
+				4D6A91AA23CD8602003C756F /* FavoritePeopleSectionController.swift */,
+				4D04A0DB23CCA45500D0EACD /* DetailPeopleSectionController.swift */,
+				4D04A0DE23CCA45500D0EACD /* DetailPeopleWidgetBuilder.swift */,
+				4D04A0DD23CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift */,
+				4D04A0DC23CCA45500D0EACD /* DetailPeopleWidgetPresenter.swift */,
+				4D04A0DA23CCA45500D0EACD /* DetailPeopleWidgetViewController.swift */,
+			);
+			path = DetailPeople;
+			sourceTree = "<group>";
+		};
+		4D04A0E423CCA70E00D0EACD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D04A0E523CCA73500D0EACD /* DetailPeopleListCell.swift */,
+				4D04A0E723CCA9F600D0EACD /* DetailPeopleListView.swift */,
+				4D6A91AC23CD8646003C756F /* FavoritePeopleListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D6A91AE23CD93E4003C756F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D6A91AF23CD9406003C756F /* DetailPeopleViewModelType.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4D6A91B123CDA2CD003C756F /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				4D6A91B223CDA305003C756F /* DetailPeopleProvider.swift */,
+				4D6A91B423CDA31A003C756F /* DetailPeopleAPIs.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		4D6A91B623CDFF6C003C756F /* DetailPeople */ = {
+			isa = PBXGroup;
+			children = (
+				4D6A91B723CDFF97003C756F /* DetailPeopleWidgetInteractorTests.swift */,
+				4D6A91B923CE000E003C756F /* Mock */,
+			);
+			path = DetailPeople;
+			sourceTree = "<group>";
+		};
+		4D6A91B923CE000E003C756F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				4D6A91BA23CE0032003C756F /* DetailPeoplePresenterMock.swift */,
+				4D6A91BC23CE0147003C756F /* DetailPeopleProviderMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		4DD4454223C926EC00F44849 = {
@@ -221,6 +315,7 @@
 		4DD4457E23C9B67500F44849 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4D04A0D923CCA38C00D0EACD /* DetailPeople */,
 				4DD4457F23C9B6B600F44849 /* People */,
 			);
 			path = Modules;
@@ -230,7 +325,6 @@
 			isa = PBXGroup;
 			children = (
 				4DD4459323CA28D500F44849 /* View */,
-				4DD445A923CAF16600F44849 /* ViewModel */,
 				4DD4459423CA314C00F44849 /* Provider */,
 				4DD4459023CA287C00F44849 /* Model */,
 				4DD4458E23C9CF8700F44849 /* PeopleWidgetBuilder.swift */,
@@ -299,14 +393,6 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		4DD445A923CAF16600F44849 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				4DD445AA23CAF1B700F44849 /* PeopleListViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		4DD445AE23CAFED500F44849 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +410,7 @@
 				4DD445B223CB04EA00F44849 /* Diffable+Extension.swift */,
 				4D04A07B23CB18AE00D0EACD /* UIColor+Extension.swift */,
 				4D04A07D23CB32ED00D0EACD /* UINavigationBar+Extension.swift */,
+				4D6A91C023CE64A3003C756F /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -332,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				4DD445B723CB07CF00F44849 /* TitleSectionHeaderView.swift */,
+				4D6A91BE23CE57BA003C756F /* ActivityIndicatorView.swift */,
 			);
 			path = Molecules;
 			sourceTree = "<group>";
@@ -572,8 +660,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D6A91BB23CE0032003C756F /* DetailPeoplePresenterMock.swift in Sources */,
+				4D6A91B823CDFF97003C756F /* DetailPeopleWidgetInteractorTests.swift in Sources */,
 				4D04A0B623CC3DFE00D0EACD /* PeopleWidgetInteractorTests.swift in Sources */,
 				4D04A0C223CC400B00D0EACD /* PeoplePresenterMock.swift in Sources */,
+				4D6A91BD23CE0147003C756F /* DetailPeopleProviderMock.swift in Sources */,
 				4D04A0C423CC45CA00D0EACD /* PeopleProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,15 +685,27 @@
 				4DD445B123CAFF1500F44849 /* Configurable.swift in Sources */,
 				4DD4458D23C9C9EF00F44849 /* PeopleProvider.swift in Sources */,
 				4DD445B823CB07CF00F44849 /* TitleSectionHeaderView.swift in Sources */,
+				4D04A0E823CCA9F600D0EACD /* DetailPeopleListView.swift in Sources */,
+				4D6A91AD23CD8646003C756F /* FavoritePeopleListCell.swift in Sources */,
+				4D6A91B023CD9406003C756F /* DetailPeopleViewModelType.swift in Sources */,
 				4DD4458723C9C6C000F44849 /* Router.swift in Sources */,
+				4D6A91AB23CD8602003C756F /* FavoritePeopleSectionController.swift in Sources */,
+				4D6A91C123CE64A3003C756F /* Date+Extension.swift in Sources */,
+				4D04A0E023CCA45500D0EACD /* DetailPeopleSectionController.swift in Sources */,
+				4D04A0E223CCA45500D0EACD /* DetailPeopleWidgetInteractor.swift in Sources */,
 				4D04A07E23CB32ED00D0EACD /* UINavigationBar+Extension.swift in Sources */,
-				4DD445AB23CAF1B700F44849 /* PeopleListViewModel.swift in Sources */,
+				4D04A0E623CCA73500D0EACD /* DetailPeopleListCell.swift in Sources */,
+				4D04A0E123CCA45500D0EACD /* DetailPeopleWidgetPresenter.swift in Sources */,
 				4DD4459223CA28C700F44849 /* PeopleModel.swift in Sources */,
 				4DD4459623CA31A800F44849 /* PeopleAPIs.swift in Sources */,
 				4DD4454F23C926EC00F44849 /* AppDelegate.swift in Sources */,
+				4D6A91BF23CE57BB003C756F /* ActivityIndicatorView.swift in Sources */,
+				4D04A0DF23CCA45500D0EACD /* DetailPeopleWidgetViewController.swift in Sources */,
 				4DD445A023CA3A4A00F44849 /* AppEntity.swift in Sources */,
+				4D04A0E323CCA45500D0EACD /* DetailPeopleWidgetBuilder.swift in Sources */,
 				4DD4458123C9B74000F44849 /* PeopleWidgetViewController.swift in Sources */,
 				4DD445AD23CAFC2D00F44849 /* PeopleListCell.swift in Sources */,
+				4D6A91B523CDA31A003C756F /* DetailPeopleAPIs.swift in Sources */,
 				4DD445A823CAE9D300F44849 /* PeopleListView.swift in Sources */,
 				4DD445A623CA45C400F44849 /* AppService.swift in Sources */,
 				4DD445B523CB05CC00F44849 /* PeopleSectionController.swift in Sources */,
@@ -610,6 +713,7 @@
 				4DD4458F23C9CF8700F44849 /* PeopleWidgetBuilder.swift in Sources */,
 				4DD4458923C9C9B200F44849 /* PeopleWidgetInteractor.swift in Sources */,
 				4DD4458B23C9C9CB00F44849 /* PeopleWidgetPresenter.swift in Sources */,
+				4D6A91B323CDA305003C756F /* DetailPeopleProvider.swift in Sources */,
 				4D04A07C23CB18AE00D0EACD /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,7 +759,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				DEVELOPMENT_TEAM = AJ73L4ZH64;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -677,7 +781,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				DEVELOPMENT_TEAM = AJ73L4ZH64;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -699,7 +803,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				DEVELOPMENT_TEAM = AJ73L4ZH64;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -719,7 +823,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				DEVELOPMENT_TEAM = AJ73L4ZH64;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -739,7 +843,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				DEVELOPMENT_TEAM = AJ73L4ZH64;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -759,7 +863,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				DEVELOPMENT_TEAM = AJ73L4ZH64;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSBUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -896,8 +1000,9 @@
 			baseConfigurationReference = 43CECAAF93220644861B5815 /* Pods-MayTheForceBeWith_JeffersonSB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				DEVELOPMENT_TEAM = AJ73L4ZH64;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -906,6 +1011,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -916,8 +1022,9 @@
 			baseConfigurationReference = 097E08F1C0838D5FDAF7A0B8 /* Pods-MayTheForceBeWith_JeffersonSB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				DEVELOPMENT_TEAM = AJ73L4ZH64;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -926,6 +1033,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -998,8 +1106,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID = "com.jeffsbcodes.MayTheForceBeWith-JeffersonSB$(BUNDLE_ID_SUFFIX)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97MFDGRZVH;
+				DEVELOPMENT_TEAM = AJ73L4ZH64;
 				INFOPLIST_FILE = MayTheForceBeWith_JeffersonSB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1008,6 +1117,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

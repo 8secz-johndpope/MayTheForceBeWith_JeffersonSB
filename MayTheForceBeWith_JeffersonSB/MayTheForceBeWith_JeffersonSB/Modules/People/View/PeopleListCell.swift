@@ -17,6 +17,7 @@ extension PeopleListCell {
 }
 
 class PeopleListCell: UICollectionViewCell {
+    public var onClickAction: (() -> Void)?
     fileprivate let appearance = Appearance()
     
     lazy var nameLabel: UILabel = {
@@ -37,6 +38,7 @@ class PeopleListCell: UICollectionViewCell {
 
     private func commonInit() {
         backgroundColor = .blackShark
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onClick)))
         addSubviews()
         makeConstraints()
     }
@@ -49,6 +51,11 @@ class PeopleListCell: UICollectionViewCell {
         nameLabel.snp.makeConstraints { make in
             make.top.leading.bottom.equalToSuperview().inset(appearance.xxsSpace)
         }
+    }
+    
+    @objc
+    func onClick() {
+        onClickAction?()
     }
 }
 
@@ -77,14 +84,16 @@ extension PeopleListCell: Configurable {
 
     func configure(with viewModel: PeopleListCell.ViewModel) {
         nameLabel.text = viewModel.name
+        nameLabel.accessibilityLabel = viewModel.name
+        accessibilityElements = [nameLabel]
     }
 }
 
 extension PeopleListCell: ListBindable {
     func bindViewModel(_ viewModel: Any) {
-        guard let friendViewModel = viewModel as? PeopleListCell.ViewModel else {
+        guard let peopleViewModel = viewModel as? PeopleListCell.ViewModel else {
             return
         }
-        configure(with: friendViewModel)
+        configure(with: peopleViewModel)
     }
 }

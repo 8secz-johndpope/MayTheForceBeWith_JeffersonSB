@@ -16,10 +16,10 @@ final class Router: NSObject {
         return viewController
     }
     
-    static func detailViewController() -> UIViewController {
-        let viewController: UIViewController = PeopleWidgetBuilder()
+    static func detailViewController(peopleDetail: PeopleResult) -> UIViewController {
+        let viewController: UIViewController = DetailPeopleWidgetBuilder(peopleDetail: peopleDetail)
             .build()
-
+        viewController.title = "About"
         return viewController
     }
 }

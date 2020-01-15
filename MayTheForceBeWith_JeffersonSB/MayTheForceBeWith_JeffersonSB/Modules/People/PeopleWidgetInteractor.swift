@@ -12,19 +12,20 @@ protocol PeopleWidgetBusinessLogic {
     func fechPeople()
     func loadMore()
     func searchPeople(name: String)
+    func segueDetail(url: String)
 }
 
 final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
     let presenter: PeopleWidgetPresentationLogic
-    let provider: ProviderPeople
+    let provider: PeopleProviderProtocol
     var searchText: String?
     var canLoadMore = false
+    var cachedPeople: [PeopleResult] = []
     private var currentPage = 1
-    private var cachedPeople: [PeopleResult] = []
 
     init(
         presenter: PeopleWidgetPresentationLogic,
-        provider: ProviderPeople
+        provider: PeopleProviderProtocol
     ) {
         self.presenter = presenter
         self.provider = provider
@@ -37,12 +38,14 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
             self?.canLoadMore = !response.next.isEmpty
             self?.presenter.presentPeoples(response: response.results)
         }, failure: { error in
+            self.canLoadMore = false
             self.presenter.presentError(with: error)
         })
     }
     
     func loadMore() {
         guard canLoadMore else {
+            self.presenter.presentStopLoad()
             return
         }
         canLoadMore = false
@@ -53,7 +56,7 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
             guard let peoples = self?.cachedPeople else { return }
             self?.presenter.presentPeoples(response: peoples)
         }, failure: { error in
-            self.presenter.presentError(with: error)
+            self.presenter.presentStopLoad()
         })
     }
     
@@ -82,5 +85,13 @@ final class PeopleWidgetInteractor: PeopleWidgetBusinessLogic {
             return nameParts.contains { predicate.evaluate(with: $0) } || name.hasPrefix(text)
         }
         return filtered
+    }
+    
+    func segueDetail(url: String) {
+        guard let peopleDetail = cachedPeople.filter({$0.url == url}).first else {
+            return
+        }
+        let controller = Router.detailViewController(peopleDetail: peopleDetail)
+        presenter.presentDetail(controller: controller)
     }
 }
