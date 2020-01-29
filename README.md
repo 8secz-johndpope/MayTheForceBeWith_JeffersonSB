@@ -36,12 +36,12 @@ $ pod install --repo-update
 ```
 
 ## Debug Accessibility
-```
+
 Debug Accessibility in iOS Simulator with the Accessibility Inspector
 The Accessibility Inspector displays accessibility information about each accessible element in an app. You can use the Accessibility Inspector to simulate VoiceOver interaction with the accessible elements in your app to examine the information they provide.
  
 Note: The Accessibility Inspector is helpful for testing the accessibility of your app during development, but it is no substitute for testing your app with VoiceOver on a physical device. For one thing, the Accessibility Inspector does not speak accessibility information, so you can’t hear how your element descriptions will sound. Even though the Accessibility Inspector is ideal for quickly verifying that elements supply appropriate accessibility information, you should test your app on a device, with VoiceOver turned on, to make sure that it behaves as users expect. See Test Accessibility on Your Device with VoiceOver for some tips on how to do this.
 
 https://developer.apple.com/library/archive/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityonYourDevicewithVoiceOver/TestAccessibilityonYourDevicewithVoiceOver.html#//apple_ref/doc/uid/TP40012619-CH3-SW1
-```
+
 
